@@ -387,6 +387,12 @@ hr {
     -moz-transform: scale(0);
     transform: scale(0); }
 
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1.5,.75);
+    -moz-transform: scale(1.5,.75);
+    transform: scale(1.5,.75); }
+
   60% {
     opacity: 1;
     -webkit-transform: scale(.8,1.4);
@@ -423,6 +429,12 @@ hr {
     -webkit-transform: scale(0);
     -moz-transform: scale(0);
     transform: scale(0); }
+
+  50% {
+    opacity: 1;
+    -webkit-transform: scale(1.5,.75);
+    -moz-transform: scale(1.5,.75);
+    transform: scale(1.5,.75); }
 
   60% {
     opacity: 1;
@@ -498,9 +510,9 @@ hr {
     -moz-transform: scale(1);
     transform: scale(1); } }
 .tile-new .tile-inner {
-  -webkit-animation: appear 500ms ease 200ms;
-  -moz-animation: appear 500ms ease 200ms;
-  animation: appear 500ms ease 200ms;
+  -webkit-animation: appear 400ms ease 200ms;
+  -moz-animation: appear 400ms ease 200ms;
+  animation: appear 400ms ease 200ms;
   -webkit-animation-fill-mode: backwards;
   -moz-animation-fill-mode: backwards;
   animation-fill-mode: backwards; }
@@ -562,9 +574,9 @@ hr {
 
 .tile-merged .tile-inner {
   z-index: 20;
-  -webkit-animation: pop 200ms ease 100ms;
-  -moz-animation: pop 200ms ease 100ms;
-  animation: pop 200ms ease 100ms;
+  -webkit-animation: pop 150ms ease 75ms;
+  -moz-animation: pop 150ms ease 75ms;
+  animation: pop 150ms ease 75ms;
   -webkit-animation-fill-mode: backwards;
   -moz-animation-fill-mode: backwards;
   animation-fill-mode: backwards; }
