@@ -513,7 +513,7 @@ hr {
     transform: scale(0) rotate(0deg); }
 
   50% {
-    opacity: .25;
+    opacity: .5;
     -webkit-transform: scale(1.2) rotate(360deg);
     -moz-transform: scale(1.2) rotate(360deg);
     transform: scale(1.2) rotate(360deg); }
@@ -530,7 +530,7 @@ hr {
     transform: scale(0) rotate(0deg); }
 
   50% {
-    opacity: .25;
+    opacity: .5;
     -webkit-transform: scale(1.2) rotate(360deg);
     -moz-transform: scale(1.2) rotate(360deg);
     transform: scale(1.2) rotate(360deg); }
@@ -547,7 +547,7 @@ hr {
     transform: scale(0) rotate(0deg); }
 
   50% {
-    opacity: .25;
+    opacity: .5;
     -webkit-transform: scale(1.2) rotate(360deg);
     -moz-transform: scale(1.2) rotate(360deg);
     transform: scale(1.2) rotate(360deg); }
@@ -560,9 +560,9 @@ hr {
 
 .tile-merged .tile-inner {
   z-index: 20;
-  -webkit-animation: pop 250ms ease 100ms;
-  -moz-animation: pop 250ms ease 100ms;
-  animation: pop 250ms ease 100ms;
+  -webkit-animation: pop 200ms ease 100ms;
+  -moz-animation: pop 200ms ease 100ms;
+  animation: pop 200ms ease 100ms;
   -webkit-animation-fill-mode: backwards;
   -moz-animation-fill-mode: backwards;
   animation-fill-mode: backwards; }
