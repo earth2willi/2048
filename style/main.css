@@ -314,7 +314,8 @@ hr {
     font-size: 55px; }
   .tile.tile-2 .tile-inner {
     color: #FFFFFF;
-    background: #FFFFFF;
+    background: #FFFFFF url('http://d1e3ezyatlol8u.cloudfront.net/img/212/doge-wink-212.gif');
+    background-size: cover;
     box-shadow: 0 0 30px 20px rgba(243, 0, 116, 0), inset 0 0 0 1px rgba(255, 0, 255, 0); }
   .tile.tile-4 .tile-inner {
     color: #DDDDDD;
