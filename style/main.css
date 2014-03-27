@@ -513,7 +513,7 @@ hr {
     transform: scale(0) rotate(0deg); }
 
   50% {
-    opacity: .5;
+    opacity: 0.5;
     -webkit-transform: scale(1.2) rotate(360deg);
     -moz-transform: scale(1.2) rotate(360deg);
     transform: scale(1.2) rotate(360deg); }
@@ -530,7 +530,7 @@ hr {
     transform: scale(0) rotate(0deg); }
 
   50% {
-    opacity: .5;
+    opacity: 0.5;
     -webkit-transform: scale(1.2) rotate(360deg);
     -moz-transform: scale(1.2) rotate(360deg);
     transform: scale(1.2) rotate(360deg); }
@@ -547,7 +547,7 @@ hr {
     transform: scale(0) rotate(0deg); }
 
   50% {
-    opacity: .5;
+    opacity: 0.5;
     -webkit-transform: scale(1.2) rotate(360deg);
     -moz-transform: scale(1.2) rotate(360deg);
     transform: scale(1.2) rotate(360deg); }
