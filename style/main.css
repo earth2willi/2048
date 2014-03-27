@@ -315,11 +315,11 @@ hr {
   .tile.tile-2 .tile-inner {
     color: #FFFFFF;
     background: #FFFFFF;
-    box-shadow: 0 0 30px 20px rgba(243, 0, 116, 0.75), inset 0 0 0 1px rgba(255, 0, 255, 0); }
+    box-shadow: 0 0 30px 20px rgba(243, 0, 116, 0), inset 0 0 0 1px rgba(255, 0, 255, 0); }
   .tile.tile-4 .tile-inner {
     color: #DDDDDD;
     background: #DDDDDD;
-    box-shadow: 0 0 30px 20px rgba(0, 215, 116, 0.75), inset 0 0 0 1px rgba(0, 255, 255, 0); }
+    box-shadow: 0 0 30px 20px rgba(0, 215, 116, 0), inset 0 0 0 1px rgba(0, 255, 255, 0); }
   .tile.tile-8 .tile-inner {
     color: #BBBBBB;
     background: #BBBBBB; }
