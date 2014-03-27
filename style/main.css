@@ -182,7 +182,7 @@ hr {
 .game-container {
   margin-top: 10px;
   position: relative;
-  padding: 15px;
+  padding: 5px;
   cursor: default;
   -webkit-touch-callout: none;
   -ms-touch-callout: none;
@@ -191,7 +191,7 @@ hr {
   -ms-user-select: none;
   -ms-touch-action: none;
   touch-action: none;
-  background: #bbada0;
+  background: #aaaaaa;
   border-radius: 6px;
   width: 500px;
   height: 500px;
