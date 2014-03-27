@@ -507,53 +507,44 @@ hr {
 
 @-webkit-keyframes pop {
   0% {
-    opacity: 0;
     -webkit-transform: scale(0) rotate(0deg);
     -moz-transform: scale(0) rotate(0deg);
     transform: scale(0) rotate(0deg); }
 
   50% {
-    opacity: 0.5;
     -webkit-transform: scale(1.2) rotate(360deg);
     -moz-transform: scale(1.2) rotate(360deg);
     transform: scale(1.2) rotate(360deg); }
 
   100% {
-    opacity: 1;
     -webkit-transform: scale(1) rotate(720deg);
     -moz-transform: scale(1) rotate(720deg);
     transform: scale(1) rotate(720deg); } }
 @-moz-keyframes pop {
-    opacity: 0;
     -webkit-transform: scale(0) rotate(0deg);
     -moz-transform: scale(0) rotate(0deg);
     transform: scale(0) rotate(0deg); }
 
   50% {
-    opacity: 0.5;
     -webkit-transform: scale(1.2) rotate(360deg);
     -moz-transform: scale(1.2) rotate(360deg);
     transform: scale(1.2) rotate(360deg); }
 
   100% {
-    opacity: 1;
     -webkit-transform: scale(1) rotate(720deg);
     -moz-transform: scale(1) rotate(720deg);
     transform: scale(1) rotate(720deg); } }
 @keyframes pop {
-    opacity: 0;
     -webkit-transform: scale(0) rotate(0deg);
     -moz-transform: scale(0) rotate(0deg);
     transform: scale(0) rotate(0deg); }
 
   50% {
-    opacity: 0.5;
     -webkit-transform: scale(1.2) rotate(360deg);
     -moz-transform: scale(1.2) rotate(360deg);
     transform: scale(1.2) rotate(360deg); }
 
   100% {
-    opacity: 1;
     -webkit-transform: scale(1) rotate(720deg);
     -moz-transform: scale(1) rotate(720deg);
     transform: scale(1) rotate(720deg); } }
