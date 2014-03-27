@@ -5,7 +5,33 @@ html, body {
   background: #330033;
   color: #776e65;
   font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
-  font-size: 18px; }
+  font-size: 18px;
+
+    -webkit-animation: background-gradient-change linear 6s infinite alternate;
+    -moz-animation: background-gradient-change linear 6s infinite alternate;
+    -moz-animation: background-gradient-change linear 6s infinite alternate; }
+
+}
+
+@-webkit-keyframes background-gradient-change {
+    0%   {background: #cff;}
+    33%  {background: #fcf;}
+    66%  {background: #ffc;}
+    100%   {background: #cff;}}
+
+@-moz-keyframes background-gradient-change {
+    0%   {background: #dff;}
+    33%  {background: #fdf;}
+    66%  {background: #ffd;}
+    100%   {background: #dff;}}
+
+@keyframes background-gradient-change {
+    0%   {background: #dff;}
+    33%  {background: #fdf;}
+    66%  {background: #ffd;}
+    100%   {background: #dff;}}
+
+
 
 body {
   margin: 80px 0; }
