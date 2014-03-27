@@ -510,9 +510,9 @@ hr {
     -moz-transform: scale(1);
     transform: scale(1); } }
 .tile-new .tile-inner {
-  -webkit-animation: appear 4000ms ease 200ms;
-  -moz-animation: appear 4000ms ease 200ms;
-  animation: appear 4000ms ease 200ms;
+  -webkit-animation: appear 400ms ease 200ms;
+  -moz-animation: appear 400ms ease 200ms;
+  animation: appear 400ms ease 200ms;
   -webkit-animation-fill-mode: backwards;
   -moz-animation-fill-mode: backwards;
   animation-fill-mode: backwards; }
@@ -529,6 +529,18 @@ hr {
     -webkit-transform: scale(1.2) rotate(360deg);
     -moz-transform: scale(1.2) rotate(360deg);
     transform: scale(1.2) rotate(360deg); }
+
+  90% {
+    opacity: 0.9;
+    -webkit-transform: scale(1.2) rotate(780deg);
+    -moz-transform: scale(1.2) rotate(780deg);
+    transform: scale(1.2) rotate(780deg); }
+
+  95% {
+    opacity: 0.95;
+    -webkit-transform: scale(1.1) rotate(700deg);
+    -moz-transform: scale(1.1) rotate(700deg);
+    transform: scale(1.1) rotate(700deg); }
 
   100% {
     opacity: 1;
@@ -548,6 +560,18 @@ hr {
     -moz-transform: scale(1.2) rotate(360deg);
     transform: scale(1.2) rotate(360deg); }
 
+  90% {
+      opacity: 0.9;
+      -webkit-transform: scale(1.2) rotate(780deg);
+      -moz-transform: scale(1.2) rotate(780deg);
+      transform: scale(1.2) rotate(780deg); }
+  
+  95% {
+      opacity: 0.95;
+      -webkit-transform: scale(1.1) rotate(700deg);
+      -moz-transform: scale(1.1) rotate(700deg);
+      transform: scale(1.1) rotate(700deg); }
+  
   100% {
     opacity: 1;
     -webkit-transform: scale(1) rotate(720deg);
@@ -565,6 +589,18 @@ hr {
     -webkit-transform: scale(1.2) rotate(360deg);
     -moz-transform: scale(1.2) rotate(360deg);
     transform: scale(1.2) rotate(360deg); }
+
+90% {
+    opacity: 0.9;
+    -webkit-transform: scale(1.2) rotate(780deg);
+    -moz-transform: scale(1.2) rotate(780deg);
+    transform: scale(1.2) rotate(780deg); }
+
+95% {
+    opacity: 0.95;
+    -webkit-transform: scale(1.1) rotate(700deg);
+    -moz-transform: scale(1.1) rotate(700deg);
+    transform: scale(1.1) rotate(700deg); }
 
   100% {
     opacity: 1;
