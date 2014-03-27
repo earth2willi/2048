@@ -191,7 +191,7 @@ hr {
   -ms-user-select: none;
   -ms-touch-action: none;
   touch-action: none;
-  background: #FFFFFF;
+  background: #abcdef;
   border-radius: 6px;
   width: 500px;
   height: 500px;
