@@ -9,27 +9,9 @@ html, body {
 
     -webkit-animation: background-gradient-change linear 6s infinite alternate;
     -moz-animation: background-gradient-change linear 6s infinite alternate;
-    -moz-animation: background-gradient-change linear 6s infinite alternate; }
+    animation: background-gradient-change linear 6s infinite alternate; }
 
 }
-
-@-webkit-keyframes background-gradient-change {
-    0%   {background: #cff;}
-    33%  {background: #fcf;}
-    66%  {background: #ffc;}
-    100%   {background: #cff;}}
-
-@-moz-keyframes background-gradient-change {
-    0%   {background: #dff;}
-    33%  {background: #fdf;}
-    66%  {background: #ffd;}
-    100%   {background: #dff;}}
-
-@keyframes background-gradient-change {
-    0%   {background: #dff;}
-    33%  {background: #fdf;}
-    66%  {background: #ffd;}
-    100%   {background: #dff;}}
 
 
 
@@ -47,6 +29,25 @@ h1.title {
   margin: 0;
   display: block;
   float: left; }
+
+@-webkit-keyframes background-gradient-change {
+    0%   {background: #ccffff;}
+    33%  {background: #ffccff;}
+    66%  {background: #ffffcc;}
+    100%   {background: #ccffff;}}
+
+@-moz-keyframes background-gradient-change {
+    0%   {background: #ccffff;}
+    33%  {background: #ffccff;}
+    66%  {background: #ffffcc;}
+    100%   {background: #ccffff;}}
+
+@keyframes background-gradient-change {
+    0%   {background: #ccffff;}
+    33%  {background: #ffccff;}
+    66%  {background: #ffffcc;}
+    100%   {background: #ccffff;}}
+
 
 @-webkit-keyframes move-up {
   0% {
