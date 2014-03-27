@@ -53,7 +53,7 @@ h1.title {
 .score-container, .best-container {
   position: relative;
   display: inline-block;
-  background: #bbada0;
+  background: #777777;
   padding: 15px 25px;
   font-size: 25px;
   height: 25px;
@@ -94,6 +94,21 @@ h1.title {
 
 .best-container:after {
   content: "Best"; }
+
+.restart-button {
+    display: inline-block;
+    background: #555555;
+    border-radius: 3px;
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #f9f6f2;
+    height: 40px;
+    margin-top: 8px;
+    line-height: 42px;
+    display: block;
+    text-align: center;
+    float: left; }
+
 
 p {
   margin-top: 0;
@@ -610,9 +625,9 @@ hr {
 
 .tile-merged .tile-inner {
   z-index: 20;
-  -webkit-animation: pop 150ms ease 75ms;
-  -moz-animation: pop 150ms ease 75ms;
-  animation: pop 150ms ease 75ms;
+  -webkit-animation: pop 250ms ease 175ms;
+  -moz-animation: pop 250ms ease 175ms;
+  animation: pop 250ms ease 175ms;
   -webkit-animation-fill-mode: backwards;
   -moz-animation-fill-mode: backwards;
   animation-fill-mode: backwards; }
@@ -626,19 +641,6 @@ hr {
   float: left;
   line-height: 42px;
   margin-bottom: 0; }
-
-.restart-button {
-  display: inline-block;
-  background: #8f7a66;
-  border-radius: 3px;
-  padding: 0 20px;
-  text-decoration: none;
-  color: #f9f6f2;
-  height: 40px;
-  line-height: 42px;
-  display: block;
-  text-align: center;
-  float: left; }
 
 .game-explanation {
   margin-top: 50px; }
