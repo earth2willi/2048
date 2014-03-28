@@ -370,8 +370,7 @@ hr {
       background: #333333; }
   .tile.tile-32 .tile-inner {
       color: #000000;
-      background: #000000 url('http://sejus.com/earth2willi/images/novaluna_COVERBACK.jpg');
-      background-size: contain; }
+      background: #000000 ; }
   .tile.tile-64 .tile-inner {
       color: #992299;
     background: #992299; }
