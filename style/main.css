@@ -7,9 +7,9 @@ html, body {
   font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 18px;
 
-    -webkit-animation: background-gradient-change linear 6s infinite alternate;
-    -moz-animation: background-gradient-change linear 6s infinite alternate;
-    animation: background-gradient-change linear 6s infinite alternate; }
+    -webkit-animation: background-gradient-change linear 10s infinite alternate;
+    -moz-animation: background-gradient-change linear 10s infinite alternate;
+    animation: background-gradient-change linear 10s infinite alternate; }
 
 }
 
@@ -31,22 +31,22 @@ h1.title {
   float: left; }
 
 @-webkit-keyframes background-gradient-change {
-    0%   {background: #ccffff;}
-    33%  {background: #ffccff;}
-    66%  {background: #ffffcc;}
-    100%   {background: #ccffff;}}
+    0%   {background: #bbffff;}
+    33%  {background: #ffbbff;}
+    66%  {background: #ffffbb;}
+    100%   {background: #bbffff;}}
 
 @-moz-keyframes background-gradient-change {
-    0%   {background: #ccffff;}
-    33%  {background: #ffccff;}
-    66%  {background: #ffffcc;}
-    100%   {background: #ccffff;}}
+    0%   {background: #bbffff;}
+    33%  {background: #ffbbff;}
+    66%  {background: #ffffbb;}
+    100%   {background: #bbffff;}}
 
 @keyframes background-gradient-change {
-    0%   {background: #ccffff;}
-    33%  {background: #ffccff;}
-    66%  {background: #ffffcc;}
-    100%   {background: #ccffff;}}
+    0%   {background: #bbffff;}
+    33%  {background: #ffbbff;}
+    66%  {background: #ffffbb;}
+    100%   {background: #bbffff;}}
 
 
 @-webkit-keyframes move-up {
@@ -191,7 +191,14 @@ hr {
   -ms-user-select: none;
   -ms-touch-action: none;
   touch-action: none;
-  background: #abcdef;
+  background: #a0000f;
+  
+  -webkit-animation: game-container-bg-gradient-change linear 5s infinite alternate;
+  -moz-animation: game-container-bg-gradient-change linear 5s infinite alternate;
+    animation: game-container-bg-gradient-change linear 5s infinite alternate;
+
+
+
   border-radius: 6px;
   width: 500px;
   height: 500px;
@@ -243,6 +250,25 @@ hr {
     .game-container .game-message.game-won, .game-container .game-message.game-over {
       display: block; }
 
+@-webkit-keyframes game-container-bg-gradient-change {
+    0%   {background: #cceeff;}
+    33%  {background: #ffccee;}
+    66%  {background: #eeffcc;}
+    100%   {background: #cceeff;}}
+
+@-moz-keyframes game-container-bg-gradient-change {
+    0%   {background: #cceeff;}
+    33%  {background: #ffccee;}
+    66%  {background: #eeffcc;}
+    100%   {background: #cceeff;}}
+
+@keyframes game-container-bg-gradient-change {
+    0%   {background: #cceeff;}
+    33%  {background: #ffccee;}
+    66%  {background: #eeffcc;}
+    100%   {background: #cceeff;}}
+
+
 .grid-container {
   position: absolute;
   z-index: 1; }
@@ -262,7 +288,7 @@ hr {
   margin-right: 15px;
   float: left;
   border-radius: 3px;
-  background: rgba(238, 228, 218, 0.35); }
+  background: rgba(238, 228, 218, 0.25); }
   .grid-cell:last-child {
     margin-right: 0; }
 
@@ -357,58 +383,60 @@ hr {
   .tile.tile-2 .tile-inner {
     color: #FFFFFF;
     background: #FFFFFF ;
-    box-shadow: 0 0 30px 20px rgba(243, 0, 116, 0), inset 0 0 0 1px rgba(255, 0, 255, 0); }
+    box-shadow: 0 0 30px 20px rgba(243, 0, 116, 0), inset 0 0 0 1px rgba(255, 0, 255, 0);
+      border: 5px;
+      border-color: #000000; }
   .tile.tile-4 .tile-inner {
-      color: #BBBBBB;
-      background: #BBBBBB;
+      color: #DADADA;
+      background: #DADADA;
     box-shadow: 0 0 30px 20px rgba(0, 215, 116, 0), inset 0 0 0 1px rgba(0, 255, 255, 0); }
   .tile.tile-8 .tile-inner {
-      color: #777777;
-      background: #777777; }
+      color: #888888;
+      background: #888888; }
   .tile.tile-16 .tile-inner {
-      color: #333333;
-      background: #333333; }
+      color: #555555;
+      background: #555555; }
   .tile.tile-32 .tile-inner {
       color: #000000;
       background: #000000 ; }
   .tile.tile-64 .tile-inner {
-      color: #992299;
-    background: #992299; }
+      color: #444477;
+    background: #444477; }
   .tile.tile-128 .tile-inner {
-      color: #222299;
-      background: #222299;
+      color: #8888AA;
+      background: #8888AA;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
     font-size: 45px; }
     @media screen and (max-width: 520px) {
       .tile.tile-128 .tile-inner {
         font-size: 25px; } }
   .tile.tile-256 .tile-inner {
-      color: #007700;
-      background: #007700;
+      color: #BB99BB;
+      background: #BB99BB;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
     font-size: 45px; }
     @media screen and (max-width: 520px) {
       .tile.tile-256 .tile-inner {
         font-size: 25px; } }
   .tile.tile-512 .tile-inner {
-      color: #FFFF00;
-    background: #FFFF00;
+      color: #CCAABB;
+    background: #CCAABB;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
     font-size: 45px; }
     @media screen and (max-width: 520px) {
       .tile.tile-512 .tile-inner {
         font-size: 25px; } }
   .tile.tile-1024 .tile-inner {
-    color: #AA7700;
-    background: #AA7700;
+    color: #DDBBCC;
+    background: #DDBBCC;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
     font-size: 35px; }
     @media screen and (max-width: 520px) {
       .tile.tile-1024 .tile-inner {
         font-size: 15px; } }
   .tile.tile-2048 .tile-inner {
-      color: #FF0000;
-      background: #FF0000;
+      color: #FFBBAA;
+      background: #FFBBAA;
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
     font-size: 35px; }
     @media screen and (max-width: 520px) {
