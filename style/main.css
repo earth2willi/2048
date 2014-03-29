@@ -447,8 +447,8 @@ font-size: 0px; }
       border-style: solid;
       border-color: #000000; }
 .tile.tile-16 .tile-inner {
-      color: #555555;
-      background: #555555;
+    color: #454545;
+    background: #454545;
       box-shadow: 0 0 4px 2px rgba(60, 60, 60, 1);
       border: 2px;
       border-style: solid;
