@@ -138,11 +138,11 @@ h1.title {
     font-size: 30px;
     opacity: 1;
     border: 5px ;
-    border-style: outset;
+    border-style: solid;
     z-index: 50;
-    -webkit-animation: restart-gradient-change linear 6s infinite alternate;
+/*    -webkit-animation: restart-gradient-change linear 6s infinite alternate;
     -moz-animation: restart-gradient-change linear 6s infinite alternate;
-    animation: restart-gradient-change linear 6s infinite alternate;
+    animation: restart-gradient-change linear 6s infinite alternate;*/
 }
 
 @-webkit-keyframes restart-gradient-change {
