@@ -397,19 +397,19 @@ border-color: #000000; }
   .tile.tile-8 .tile-inner {
       color: #888888;
       background: #888888;
-border: 2px;
+border: 1px;
 border-style: solid;
 border-color: #000000; }
 .tile.tile-16 .tile-inner {
       color: #555555;
       background: #555555;
-border: 3px;
+border: 1px;
 border-style: solid;
 border-color: #FFFFFF; }
 .tile.tile-32 .tile-inner {
       color: #000000;
       background: #000000 ;
-border: 4px;
+border: 1px;
 border-style: solid;
 border-color: #FFFFFF; }
   .tile.tile-64 .tile-inner {
@@ -637,65 +637,77 @@ border-color: #FFFFFF; }
       box-shadow: 0 0 30px 20px rgba(0, 0, 255, 0);}}
 
 @-moz-keyframes pop {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale(0) rotate(0deg);
-    -moz-transform: scale(0) rotate(0deg);
-    transform: scale(0) rotate(0deg); }
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0) rotate(0deg);
+        -moz-transform: scale(0) rotate(0deg);
+        transform: scale(0) rotate(0deg);
+        box-shadow: 0 0 0px 0px rgba(255, 0, 0, 0.5);}
+    
+    50% {
+        opacity: 0.5;
+        -webkit-transform: scale(1.5) rotate(360deg);
+        -moz-transform: scale(1.5) rotate(360deg);
+        transform: scale(1.5) rotate(360deg);
+        box-shadow: 0 0 50px 30px rgba(255, 153, 102, .7);}
+    
+    90% {
+        opacity: 0.9;
+        -webkit-transform: scale(0.8) rotate(780deg);
+        -moz-transform: scale(0.8) rotate(780deg);
+        transform: scale(0.8) rotate(780deg);
+        box-shadow: 0 0 40px 25px rgba(255, 255, 0, .5);}
+    
+    95% {
+        opacity: 0.95;
+        -webkit-transform: scale(1.2) rotate(700deg);
+        -moz-transform: scale(1.2) rotate(700deg);
+        transform: scale(1.2) rotate(700deg);
+        box-shadow: 0 0 30px 20px rgba(0, 255, 0, 0.5);}
+    
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1) rotate(720deg);
+        -moz-transform: scale(1) rotate(720deg);
+        transform: scale(1) rotate(720deg);
+        box-shadow: 0 0 30px 20px rgba(0, 0, 255, 0);}}
 
-  50% {
-    opacity: 0.5;
-    -webkit-transform: scale(1.2) rotate(360deg);
-    -moz-transform: scale(1.2) rotate(360deg);
-    transform: scale(1.2) rotate(360deg); }
-
-  90% {
-      opacity: 0.9;
-      -webkit-transform: scale(1.2) rotate(780deg);
-      -moz-transform: scale(1.2) rotate(780deg);
-      transform: scale(1.2) rotate(780deg); }
-  
-  95% {
-      opacity: 0.95;
-      -webkit-transform: scale(1.1) rotate(700deg);
-      -moz-transform: scale(1.1) rotate(700deg);
-      transform: scale(1.1) rotate(700deg); }
-  
-  100% {
-    opacity: 1;
-    -webkit-transform: scale(1) rotate(720deg);
-    -moz-transform: scale(1) rotate(720deg);
-    transform: scale(1) rotate(720deg); } }
 @keyframes pop {
-  0% {
-    opacity: 0;
-    -webkit-transform: scale(0) rotate(0deg);
-    -moz-transform: scale(0) rotate(0deg);
-    transform: scale(0) rotate(0deg); }
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0) rotate(0deg);
+        -moz-transform: scale(0) rotate(0deg);
+        transform: scale(0) rotate(0deg);
+        box-shadow: 0 0 0px 0px rgba(255, 0, 0, 0.5);}
+    
+    50% {
+        opacity: 0.5;
+        -webkit-transform: scale(1.5) rotate(360deg);
+        -moz-transform: scale(1.5) rotate(360deg);
+        transform: scale(1.5) rotate(360deg);
+        box-shadow: 0 0 50px 30px rgba(255, 153, 102, .7);}
+    
+    90% {
+        opacity: 0.9;
+        -webkit-transform: scale(0.8) rotate(780deg);
+        -moz-transform: scale(0.8) rotate(780deg);
+        transform: scale(0.8) rotate(780deg);
+        box-shadow: 0 0 40px 25px rgba(255, 255, 0, .5);}
+    
+    95% {
+        opacity: 0.95;
+        -webkit-transform: scale(1.2) rotate(700deg);
+        -moz-transform: scale(1.2) rotate(700deg);
+        transform: scale(1.2) rotate(700deg);
+        box-shadow: 0 0 30px 20px rgba(0, 255, 0, 0.5);}
+    
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1) rotate(720deg);
+        -moz-transform: scale(1) rotate(720deg);
+        transform: scale(1) rotate(720deg);
+        box-shadow: 0 0 30px 20px rgba(0, 0, 255, 0);}}
 
-  50% {
-    opacity: 0.5;
-    -webkit-transform: scale(1.2) rotate(360deg);
-    -moz-transform: scale(1.2) rotate(360deg);
-    transform: scale(1.2) rotate(360deg); }
-
-90% {
-    opacity: 0.9;
-    -webkit-transform: scale(1.2) rotate(780deg);
-    -moz-transform: scale(1.2) rotate(780deg);
-    transform: scale(1.2) rotate(780deg); }
-
-95% {
-    opacity: 0.95;
-    -webkit-transform: scale(1.1) rotate(700deg);
-    -moz-transform: scale(1.1) rotate(700deg);
-    transform: scale(1.1) rotate(700deg); }
-
-  100% {
-    opacity: 1;
-    -webkit-transform: scale(1) rotate(720deg);
-    -moz-transform: scale(1) rotate(720deg);
-    transform: scale(1) rotate(720deg); } }
 
 .tile-merged .tile-inner {
   z-index: 20;
