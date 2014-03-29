@@ -107,7 +107,7 @@ h1.title {
     font-size: 25px;
     line-height: 25px;
     font-weight: bold;
-    color: rgba(119, 110, 101, 0.9);
+    color: rgba(255, 255, 255, 0.75); /*color of score increment animation move-up*/
     z-index: 100;
     -webkit-animation: move-up 600ms ease-in;
     -moz-animation: move-up 600ms ease-in;
@@ -125,16 +125,43 @@ h1.title {
 .restart-button {
     display: inline-block;
     background: #555555;
-    border-radius: 3px;
-    padding: 15px 20px;
+    border-radius: 2px;
+    padding: 5px 5px;
     text-decoration: none;
-    color: #f9f6f2;
-    height: 40px;
-    margin-top: 8px;
-    line-height: 42px;
+    color: #222222;
+    height: auto;
+    margin-top: 10px;
     display: block;
     text-align: center;
-    float: left; }
+    vertical-align: middle;
+    float: center;
+    font-size: 30px;
+    opacity: 0.75;
+    border: 5px ;
+    border-style: outset;
+    z-index: 50;
+    -webkit-animation: restart-gradient-change linear 6s infinite alternate;
+    -moz-animation: restart-gradient-change linear 6s infinite alternate;
+    animation: restart-gradient-change linear 6s infinite alternate;
+}
+
+@-webkit-keyframes restart-gradient-change {
+    0%   {background: #aaeeee; border-color: #ddddbb;}
+    33%  {background: #eeaaee; border-color: #bbdddd;}
+    66%  {background: #eeeeaa; border-color: #ddbbdd;}
+    100%   {background: #aaeeee; border-color: #ddddbb;}}
+
+@-moz-keyframes restart-gradient-change {
+    0%   {background: #bbffff;}
+    33%  {background: #ffbbff;}
+    66%  {background: #ffffbb;}
+    100%   {background: #bbffff;}}
+
+@keyframes restart-gradient-change {
+    0%   {background: #bbffff;}
+    33%  {background: #ffbbff;}
+    66%  {background: #ffffbb;}
+    100%   {background: #bbffff;}}
 
 
 p {
@@ -196,8 +223,6 @@ hr {
   -webkit-animation: game-container-bg-gradient-change linear 5s infinite alternate;
   -moz-animation: game-container-bg-gradient-change linear 5s infinite alternate;
     animation: game-container-bg-gradient-change linear 5s infinite alternate;
-
-
 
   border-radius: 6px;
   width: 500px;
@@ -267,6 +292,25 @@ hr {
     33%  {background: #ffccee;}
     66%  {background: #eeffcc;}
     100%   {background: #cceeff;}}
+
+
+
+@-webkit-keyframes pop-game-container-glow {
+    0%   {box-shadow: 0 0 0px 0px rgba(255, 255, 255, 0.5);}
+    33%  {box-shadow: 0 0 100px 50px rgba(255, 255, 255, 0.95);}
+    66%  {box-shadow: 0 0 159px 120px rgba(255, 255, 255, 0.95);}
+    100%  {box-shadow: 0 0 0px 0px rgba(255, 255, 255, 0.5);}}
+
+@-moz-keyframes pop-game-container-glow {
+    0%   {box-shadow: 0 0 0px 0px rgba(255, 255, 255, 0.5);}
+    33%  {box-shadow: 0 0 100px 50px rgba(255, 255, 255, 0.95);}
+    66%  {box-shadow: 0 0 159px 120px rgba(255, 255, 255, 0.95);}
+    100%  {box-shadow: 0 0 0px 0px rgba(255, 255, 255, 0.5);}}
+@keyframes pop-game-container-glow {
+    0%   {box-shadow: 0 0 0px 0px rgba(255, 255, 255, 0.5);}
+    33%  {box-shadow: 0 0 100px 50px rgba(255, 255, 255, 0.95);}
+    66%  {box-shadow: 0 0 159px 120px rgba(255, 255, 255, 0.95);}
+    100%  {box-shadow: 0 0 0px 0px rgba(255, 255, 255, 0.5);}}
 
 
 .grid-container {
@@ -381,44 +425,45 @@ hr {
     z-index: 10;
     font-size: 55px; }
   .tile.tile-2 .tile-inner {
-    color: #FFFFFF;
+      color: #000000;
     background: #FFFFFF ;
     box-shadow: 0 0 30px 20px rgba(255, 255, 255, 0.5);
       border: 1px;
       border-style: solid;
-      border-color: #000000; }
+      border-color: #000000;
+font-size: 0px; }
   .tile.tile-4 .tile-inner {
       color: #DADADA;
       background: #DADADA;
-      box-shadow: 0 0 30px 20px rgba(200, 200, 200, 0.25);
+      box-shadow: 0 0 30px 20px rgba(200, 200, 200, 0.3);
       border: 1px;
       border-style: solid;
       border-color: #000000; }
   .tile.tile-8 .tile-inner {
       color: #888888;
       background: #888888;
-      box-shadow: 0 0 30px 20px rgba(150, 150, 150, 0.25);
+      box-shadow: 0 0 30px 20px rgba(128, 128, 128, 0.3);
       border: 1px;
       border-style: solid;
       border-color: #000000; }
 .tile.tile-16 .tile-inner {
       color: #555555;
       background: #555555;
-      box-shadow: 0 0 30px 20px rgba(255, 255, 255, 0.25);
+      box-shadow: 0 0 30px 20px rgba(60, 60, 60,, 0.3);
       border: 1px;
       border-style: solid;
     border-color: #FFFFFF; }
 .tile.tile-32 .tile-inner {
       color: #000000;
       background: #000000 ;
-      box-shadow: 0 0 30px 20px rgba(255, 255, 255, 0.25);
+      box-shadow: 0 0 30px 20px rgba(0, 0, 0, 0.3);
       border: 1px;
       border-style: solid;
     border-color: #FFFFFF; }
   .tile.tile-64 .tile-inner {
       color: #444477;
     background: #444477;
-    box-shadow: 0 0 30px 20px rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 30px 20px rgba(30, 10, 215, 0.3);
     border: 1px;
     border-style: solid;
       border-color: #444477; }
@@ -633,7 +678,8 @@ hr {
     -webkit-transform: scale(0) rotate(0deg);
     -moz-transform: scale(0) rotate(0deg);
     transform: scale(0) rotate(0deg);
-  box-shadow: 0 0 0px 0px rgba(255, 0, 0, 0.5);}
+  box-shadow: 0 0 0px 0px rgba(255, 0, 0, 0.5);
+  }
 
   50% {
     opacity: 0.5;
@@ -737,10 +783,18 @@ hr {
 
 
 .tile-merged .tile-inner {
-  z-index: 20;
+  z-index: 700;
+  
   -webkit-animation: pop 250ms ease 175ms;
   -moz-animation: pop 250ms ease 175ms;
   animation: pop 250ms ease 175ms;
+  
+  .game-container{
+      
+  -webkit-animation: pop-game-container-glow 500ms ease 175ms;
+  -moz-animation: pop-game-container-glow 500ms ease 175ms;
+      animation: pop-game-container-glow 500ms ease 175ms;}
+  
   -webkit-animation-fill-mode: backwards;
   -moz-animation-fill-mode: backwards;
   animation-fill-mode: backwards; }
