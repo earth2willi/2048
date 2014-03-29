@@ -136,7 +136,7 @@ h1.title {
     vertical-align: middle;
     float: center;
     font-size: 30px;
-    opacity: 0.75;
+    opacity: 1;
     border: 5px ;
     border-style: outset;
     z-index: 50;
