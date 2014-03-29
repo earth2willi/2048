@@ -458,14 +458,14 @@ font-size: 0px; }
       background: #000000 ;
       box-shadow: 0 0 30px 20px rgba(0, 0, 0, 0.3);
       border: 3px;
-      border-style: double;
+      border-style: solid;
     border-color: #FFFFFF; }
   .tile.tile-64 .tile-inner {
       color: #444477;
     background: #444477;
     box-shadow: 0 0 30px 20px rgba(0, 210, 210, 0.3);
     border: 3px;
-    border-style: outset;
+    border-style: solid;
       border-color: #007ad6; }
 
   .tile.tile-128 .tile-inner {
@@ -473,7 +473,7 @@ font-size: 0px; }
       background: #b700d6;
       box-shadow: 0 0 30px 20px rgba(250, 0, 250, 0.3);
       border: 3px;
-      border-style: outset;
+      border-style: solid;
       border-color: #db82ff;
     font-size: 45px; }
     @media screen and (max-width: 520px) {
@@ -484,7 +484,7 @@ font-size: 0px; }
       background: #DD77DD;
       box-shadow: 0 0 30px 20px rgba(255, 255, 255, 0.3);
       border: 3px;
-      border-style: outset;
+      border-style: solid;
       border-color: #DD77DD;
     font-size: 45px; }
     @media screen and (max-width: 520px) {
@@ -495,7 +495,7 @@ font-size: 0px; }
     background: #FFAA99;
     box-shadow: 0 0 30px 20px rgba(255, 255, 255, 0.3);
     border: 3px;
-    border-style: outset;
+    border-style: solid;
       border-color: #FFAA99;
     font-size: 45px; }
     @media screen and (max-width: 520px) {
@@ -506,7 +506,7 @@ font-size: 0px; }
     background: #DDBBCC;
     box-shadow: 0 0 30px 20px rgba(255, 255, 255, 0.3);
     border: 3px;
-    border-style: outset;
+    border-style: solid;
       border-color: #DDBBCC;
     font-size: 35px; }
     @media screen and (max-width: 520px) {
@@ -517,7 +517,7 @@ font-size: 0px; }
       background: #FFBBAA;
       box-shadow: 0 0 30px 20px rgba(255, 255, 255, 0.3);
       border: 3px;
-      border-style: outset;
+      border-style: solid;
       border-color: #FFBBAA;
     font-size: 35px; }
     @media screen and (max-width: 520px) {
@@ -528,7 +528,7 @@ font-size: 0px; }
     background: #3c3a32;
     box-shadow: 0 0 30px 20px rgba(255, 255, 255, 0.3);
     border: 3px;
-    border-style: outset;
+    border-style: solid;
       border-color: #FFFFFF;
     font-size: 30px; }
     @media screen and (max-width: 520px) {
