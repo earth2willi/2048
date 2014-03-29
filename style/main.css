@@ -786,8 +786,8 @@ font-size: 0px; }
   z-index: 700;
   
   -webkit-animation: /*pop-game-container-glow 300ms ease 200ms,*/ pop 250ms ease 175ms;
-  -moz-animation: pop-game-container-glow 300ms ease 200ms, pop 250ms ease 175ms;
-  animation: pop-game-container-glow 300ms ease 200ms, pop 250ms ease 175ms;
+  -moz-animation: /*pop-game-container-glow 300ms ease 200ms,*/ pop 250ms ease 175ms;
+  animation: /*pop-game-container-glow 300ms ease 200ms,*/ pop 250ms ease 175ms;
  
   -webkit-animation-fill-mode: backwards;
   -moz-animation-fill-mode: backwards;
