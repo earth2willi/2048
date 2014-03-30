@@ -502,12 +502,12 @@ font-size: 0px; }
       .tile.tile-512 .tile-inner {
         font-size: 25px; } }
   .tile.tile-1024 .tile-inner { /*Yellow*/
-      color: #FBFE00;
-    background: #FBFE00;
+      color: #FDFD00;
+    background: #FDFD00;
     box-shadow: 0 0 4px 2px rgba(255, 255, 128, 1);
     border: 3px;
     border-style: solid;
-      border-color: #DDDD66;
+      border-color: #FFFF99;
     font-size: 35px; }
     @media screen and (max-width: 520px) {
       .tile.tile-1024 .tile-inner {
