@@ -30,6 +30,114 @@ h1.title {
   display: block;
   float: left; }
 
+@-webkit-keyframes fade-in-out {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0) rotate(0deg);
+        -moz-transform: scale(0) rotate(0deg);
+        transform: scale(0) rotate(0deg);
+        box-shadow: 0 0 0px 0px rgba(255, 255, 255, 0.5);}
+    
+    25% {
+        opacity: .5;
+        -webkit-transform: scale(1) rotate(360deg);
+        -moz-transform: scale(1) rotate(360deg);
+        transform: scale(1) rotate(360deg);
+        box-shadow: 0 0 25px 10px rgba(255, 255, 255, 0.5);}
+    
+    50% {
+        opacity: .5;
+-webkit-transform: scale(1) rotate(360deg);
+-moz-transform: scale(1) rotate(360deg);
+transform: scale(1) rotate(360deg);
+box-shadow: 0 0 25px 10px rgba(255, 255, 255, 0.5);}
+    75% {
+        opacity: .5;
+        -webkit-transform: scale(1) rotate(360deg);
+        -moz-transform: scale(1) rotate(360deg);
+        transform: scale(1) rotate(360deg);
+        box-shadow: 0 0 25px 10px rgba(255, 255, 255, 0.5);}
+    
+    100% {
+        opacity: 0;
+-webkit-transform: scale(2) rotate(720deg);
+-moz-transform: scale(2) rotate(720deg);
+transform: scale(2) rotate(720deg);
+        box-shadow: 0 0 25px 10px rgba(255, 255, 255, 0.5);} }
+
+@-moz-keyframes fade-in-out {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0) rotate(0deg);
+        -moz-transform: scale(0) rotate(0deg);
+        transform: scale(0) rotate(0deg);
+        box-shadow: 0 0 0px 0px rgba(255, 0, 0, 0.5);}
+    
+    25% {
+        opacity: .5;
+        -webkit-transform: scale(1) rotate(360deg);
+        -moz-transform: scale(1) rotate(360deg);
+        transform: scale(1) rotate(360deg);
+        box-shadow: 0 0 25px 10px rgba(255, 0, 0, 0.5);}
+    
+    50% {
+        opacity: .5;
+        -webkit-transform: scale(1) rotate(360deg);
+        -moz-transform: scale(1) rotate(360deg);
+        transform: scale(1) rotate(360deg);
+        box-shadow: 0 0 25px 10px rgba(255, 0, 0, 0.5);}
+    75% {
+        opacity: .5;
+        -webkit-transform: scale(1) rotate(360deg);
+        -moz-transform: scale(1) rotate(360deg);
+        transform: scale(1) rotate(360deg);
+        box-shadow: 0 0 25px 10px rgba(255, 0, 0, 0.5);}
+    
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(2) rotate(720deg);
+        -moz-transform: scale(2) rotate(720deg);
+        transform: scale(2) rotate(720deg);
+        box-shadow: 0 0 25px 10px rgba(255, 0, 0, 0.5);} }
+
+@keyframes fade-in-out {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0) rotate(0deg);
+        -moz-transform: scale(0) rotate(0deg);
+        transform: scale(0) rotate(0deg);
+        box-shadow: 0 0 0px 0px rgba(255, 0, 0, 0.5);}
+    
+    25% {
+        opacity: .5;
+        -webkit-transform: scale(1) rotate(360deg);
+        -moz-transform: scale(1) rotate(360deg);
+        transform: scale(1) rotate(360deg);
+        box-shadow: 0 0 25px 10px rgba(255, 0, 0, 0.5);}
+    
+    50% {
+        opacity: .5;
+        -webkit-transform: scale(1) rotate(360deg);
+        -moz-transform: scale(1) rotate(360deg);
+        transform: scale(1) rotate(360deg);
+        box-shadow: 0 0 25px 10px rgba(255, 0, 0, 0.5);}
+    75% {
+        opacity: .5;
+        -webkit-transform: scale(1) rotate(360deg);
+        -moz-transform: scale(1) rotate(360deg);
+        transform: scale(1) rotate(360deg);
+        box-shadow: 0 0 25px 10px rgba(255, 0, 0, 0.5);}
+    
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(2) rotate(720deg);
+        -moz-transform: scale(2) rotate(720deg);
+        transform: scale(2) rotate(720deg);
+        box-shadow: 0 0 25px 10px rgba(255, 0, 0, 0.5);} }
+
+
+
+
 @-webkit-keyframes background-gradient-change {
     0%   {background: #bbffff;}
     33%  {background: #ffbbff;}
@@ -76,6 +184,116 @@ h1.title {
 .scores-container {
   float: right;
   text-align: right; }
+
+
+
+/*Doge*/
+
+.game-container .doge-says {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;}
+.game-container .doge-says p {
+    position:fixed;
+    font-size: 200px;
+    /*
+    background:   url('http://upload.wikimedia.org/wikipedia/commons/d/d0/禪-ouyang.png');
+        background-size: cover;
+     font-weight: 0;
+   */
+    
+    height: auto;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+    vertical-align: middle;
+    float: center;
+
+
+    line-height: 60px;
+    -webkit-animation: fade-in-out 600ms ease 300ms;
+    -moz-animation: fade-in-out 600ms ease 300ms;
+    animation: fade-in-out 600ms ease 300ms;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    animation-fill-mode: both; }
+
+
+.info-container {
+    position: relative;
+    cursor:pointer;
+    left:50%;
+    margin-left:-32px;
+    margin-bottom:10px;}
+
+.shout-out-container{
+    text-align:center;
+}
+.shout-out{
+    height:10px;
+    line-height: 10px;
+    background: #f0f;
+    padding: 10px 10px;
+    border-radius: 3px;
+    display:inline-block;
+}
+
+.shout-out a{
+    font-weight: normal;
+    height:10px;
+    width:auto;
+    text-decoration:none;
+    color:#fff;
+}
+
+.info-container, .hide-info {
+    display: inline-block;
+    background: #f0f;
+    padding: 10px 15px;
+    height: 10px;
+    line-height: 10px;
+    font-size:10px;
+    font-weight: bold;
+    border-radius: 3px;
+    color: white;
+    margin-top: 8px;
+    width: 36px;
+    text-align: center; }
+.info-container a, .hide-info a{
+    color:#fff;
+    text-decoration:none;}
+
+.game-container .info {
+    display: none;
+    position: absolute;
+    overflow: scroll;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(255,255,255,0.9);
+    z-index: 100;
+    border-radius: 6px;
+    text-align: center;
+    /*    -webkit-animation: fade-in 800ms ease;
+     -moz-animation: fade-in 800ms ease;
+     animation: fade-in 800ms ease;*/
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    animation-fill-mode: both; }
+.game-container .info p {
+    position:relative;
+    font-size: 16px;
+    padding:10px 20px 10px 20px;
+    font-weight: bold;}
+
+/* end Doge*/
+
+
+
+
+
 
 .score-container, .best-container {
   position: relative;
@@ -1007,8 +1225,14 @@ font-size: 0px; }
   .tile .tile-inner {
     font-size: 35px; }
 
-  .game-message p {
+.doge-says p {
     font-size: 30px !important;
+    height: 30px !important;
+    line-height: 30px !important;}
+
+
+  .game-message p {
+    font-size: 80px !important;
     height: 30px !important;
     line-height: 30px !important;
     margin-top: 90px !important; }
