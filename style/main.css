@@ -184,13 +184,13 @@ transform: scale(5) rotate(-90deg);
 .game-container .doge-says p {
     position:fixed;
     font-size: 200px;
-    /*
+    
     background:   url('http://upload.wikimedia.org/wikipedia/commons/d/d0/禪-ouyang.png');
         background-size: cover;
      font-weight: 0;
-   */
+   
     
-    height: 300px;
+    height: 300px; /*must be a pixel value or game over screen breaks??*/
     margin-top: 10px;
     text-align: center;
     vertical-align: middle;
@@ -198,9 +198,9 @@ transform: scale(5) rotate(-90deg);
 
 
     line-height: auto;
-    -webkit-animation: fade-in-out 600ms ease 100ms;
-    -moz-animation: fade-in-out 600ms ease 100ms;
-    animation: fade-in-out 600ms ease 100ms;
+    -webkit-animation: fade-in-out 600ms linear 0ms;
+    -moz-animation: fade-in-out 600ms ease 0ms;
+    animation: fade-in-out 600ms ease 0ms;
     -webkit-animation-fill-mode: both;
     -moz-animation-fill-mode: both;
     animation-fill-mode: both; }
