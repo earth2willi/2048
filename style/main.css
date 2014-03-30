@@ -2,12 +2,14 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: #330033;
+  background: #330033  url('http://www.sejus.com/earth2willi/images/novaluna.gif');
+  background-size: 500px 500px;
+  background-repeat: repeat;
   color: #776e65;
   font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 18px;
 
-    -webkit-animation: background-gradient-change linear 10s infinite alternate;
+    -webkit-animation: background-gradient-change linear 10s infinite;
     -moz-animation: background-gradient-change linear 10s infinite alternate;
     animation: background-gradient-change linear 10s infinite alternate; }
 
@@ -39,7 +41,7 @@ h1.title {
  /*       box-shadow: 0 0 0px 0px rgba(255, 255, 255, 0.5)*/;}
     
     50% {
-        opacity: 0.5;
+        opacity: 0.3;
         -webkit-transform: scale(2) rotate(-45deg);
         -moz-transform: scale(2) rotate(-45deg);
         transform: scale(2) rotate(-45deg);
@@ -126,10 +128,21 @@ transform: scale(5) rotate(-90deg);
 
 
 @-webkit-keyframes background-gradient-change {
-    0%   {background: #bbffff;}
-    33%  {background: #ffbbff;}
-    66%  {background: #ffffbb;}
-    100%   {background: #bbffff;}}
+    0%   {background: #bbffff  url('http://www.sejus.com/earth2willi/images/novaluna.gif');
+        background-position: 0% 0px;
+}
+    33%  {background: #ffbbff  url('http://www.sejus.com/earth2willi/images/novaluna.gif');
+        background-position: -33% 0px;
+    }
+
+    66%  {background: #ffffbb  url('http://www.sejus.com/earth2willi/images/novaluna.gif');
+        background-position: -66% 0px;
+    }
+
+    100%   {background: #bbffff  url('http://www.sejus.com/earth2willi/images/novaluna.gif');
+        background-position: -100% 0px;
+    }
+}
 
 @-moz-keyframes background-gradient-change {
     0%   {background: #bbffff;}
@@ -258,7 +271,7 @@ transform: scale(5) rotate(-90deg);
     right: 0;
     bottom: 0;
     left: 0;
-    background: rgba(255,255,255,0.9);
+    background: rgba(255,255,255,1);
     z-index: 100;
     border-radius: 6px;
     text-align: center;
@@ -431,6 +444,7 @@ hr {
   border-radius: 6px;
   width: 500px;
   height: 500px;
+  opacity: 1;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
@@ -642,35 +656,40 @@ font-size: 0px; }
       box-shadow: 0 0 4px 2px rgba(255, 255, 255, 1);
       border: 2px;
       border-style: solid;
-      border-color: #000000; }
+      border-color: #000000;
+ }
   .tile.tile-8 .tile-inner {
       color: #909090;
       background: #909090;
       box-shadow: 0 0 4px 2px rgba(255, 255, 255, 1);
       border: 2px;
       border-style: solid;
-      border-color: #000000; }
+      border-color: #000000;
+ }
 .tile.tile-16 .tile-inner {
     color: #505050;
     background: #505050;
       box-shadow: 0 0 4px 2px rgba(128, 128, 128, 1);
       border: 2px;
       border-style: solid;
-    border-color: #FFFFFF; }
+    border-color: #FFFFFF;
+ }
 .tile.tile-32 .tile-inner {
       color: #000000;
       background: #000000 ;
       box-shadow: 0 0 4px 2px rgba(0, 0, 0, 1);
       border: 2px;
       border-style: solid;
-    border-color: #FFFFFF; }
+    border-color: #FFFFFF;
+}
   .tile.tile-64 .tile-inner {  /*Deep Blue*/
       color: #555599;
     background: #555599;
     box-shadow: 0 0 4px 2px rgba(150, 255, 255, 1);
     border: 3px;
     border-style: solid;
-      border-color: #406ac6; }
+      border-color: #406ac6;
+ }
 
   .tile.tile-128 .tile-inner { /*Purple*/
       color: #8110b0;
@@ -987,15 +1006,15 @@ font-size: 0px; }
 
 
 .tile-merged .tile-inner {
-  z-index: 700;
-  
-  -webkit-animation: pop-game-container-glow 300ms ease 200ms, pop 250ms ease 175ms;
-  -moz-animation: pop-game-container-glow 300ms ease 200ms, pop 250ms ease 175ms;
-  animation: pop-game-container-glow 300ms ease 200ms, pop 250ms ease 175ms;
- 
-  -webkit-animation-fill-mode: backwards;
-  -moz-animation-fill-mode: backwards;
-  animation-fill-mode: backwards; }
+    z-index: 700;
+    
+    -webkit-animation: pop-game-container-glow 300ms ease 200ms, pop 250ms ease 175ms;
+    -moz-animation: pop-game-container-glow 300ms ease 200ms, pop 250ms ease 175ms;
+    animation: pop-game-container-glow 300ms ease 200ms, pop 250ms ease 175ms;
+    
+    -webkit-animation-fill-mode: backwards;
+    -moz-animation-fill-mode: backwards;
+    animation-fill-mode: backwards; }
 
 .above-game:after {
   content: "";
