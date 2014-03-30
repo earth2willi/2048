@@ -469,23 +469,23 @@ font-size: 0px; }
       border-color: #007ad6; }
 
   .tile.tile-128 .tile-inner {
-      color: #b700d6;
-      background: #b700d6;
+      color: #9700c6;
+      background: #9700c6;
       box-shadow: 0 0 4px 2px rgba(250, 0, 250, 1);
       border: 2px;
       border-style: solid;
-      border-color: #db82ff;
+      border-color: #cb72ee;
     font-size: 45px; }
     @media screen and (max-width: 520px) {
       .tile.tile-128 .tile-inner {
         font-size: 25px; } }
   .tile.tile-256 .tile-inner {
-      color: #DD77DD;
-      background: #DD77DD;
-      box-shadow: 0 0 4px 2px rgba(255, 255, 255, 1);
+      color: #CC0000;
+      background: #CC0000;
+      box-shadow: 0 0 4px 2px rgba(255, 64, 64, 1);
       border: 2px;
       border-style: solid;
-      border-color: #DD77DD;
+      border-color: #990000;
     font-size: 45px; }
     @media screen and (max-width: 520px) {
       .tile.tile-256 .tile-inner {
