@@ -425,7 +425,7 @@ hr {
     z-index: 10;
     font-size: 55px; }
   .tile.tile-2 .tile-inner {
-      color: #000000;
+      color: #FFFFFF;
     background: #FFFFFF ;
     box-shadow: 0 0 4px 2px rgba(255, 255, 255, 1);
       border: 1px;
@@ -440,16 +440,16 @@ font-size: 0px; }
       border-style: solid;
       border-color: #000000; }
   .tile.tile-8 .tile-inner {
-      color: #969696;
-      background: #969696;
-      box-shadow: 0 0 4px 2px rgba(128, 128, 128, 1);
+      color: #909090;
+      background: #909090;
+      box-shadow: 0 0 4px 2px rgba(255, 255, 255, 1);
       border: 2px;
       border-style: solid;
       border-color: #000000; }
 .tile.tile-16 .tile-inner {
-    color: #454545;
-    background: #454545;
-      box-shadow: 0 0 4px 2px rgba(60, 60, 60, 1);
+    color: #505050;
+    background: #505050;
+      box-shadow: 0 0 4px 2px rgba(128, 128, 128, 1);
       border: 2px;
       border-style: solid;
     border-color: #FFFFFF; }
