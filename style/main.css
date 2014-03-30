@@ -327,8 +327,8 @@ hr {
     clear: both; }
 
 .grid-cell {
-  width: 106.25px;
-  height: 106.25px;
+  width: 104.25px;
+  height: 104.25px;
   margin-right: 15px;
   float: left;
   border-radius: 3px;
@@ -460,65 +460,65 @@ font-size: 0px; }
       border: 2px;
       border-style: solid;
     border-color: #FFFFFF; }
-  .tile.tile-64 .tile-inner {
-      color: #444477;
-    background: #444477;
-    box-shadow: 0 0 4px 2px rgba(0, 210, 210, 1);
-    border: 2px;
+  .tile.tile-64 .tile-inner {  /*Deep Blue*/
+      color: #555599;
+    background: #555599;
+    box-shadow: 0 0 4px 2px rgba(150, 255, 255, 1);
+    border: 3px;
     border-style: solid;
-      border-color: #007ad6; }
+      border-color: #406ac6; }
 
-  .tile.tile-128 .tile-inner {
-      color: #9700c6;
-      background: #9700c6;
-      box-shadow: 0 0 4px 2px rgba(250, 0, 250, 1);
+  .tile.tile-128 .tile-inner { /*Purple*/
+      color: #8110b0;
+      background: #8110b0;
+      box-shadow: 0 0 4px 2px rgba(255, 175, 255, 1);
       border: 2px;
       border-style: solid;
       border-color: #cb72ee;
-    font-size: 45px; }
+    font-size: 0px; }
     @media screen and (max-width: 520px) {
       .tile.tile-128 .tile-inner {
         font-size: 25px; } }
-  .tile.tile-256 .tile-inner {
+  .tile.tile-256 .tile-inner { /*Red*/
       color: #CC0000;
       background: #CC0000;
-      box-shadow: 0 0 4px 2px rgba(255, 64, 64, 1);
+      box-shadow: 0 0 4px 2px rgba(255, 128, 128, 1);
       border: 2px;
       border-style: solid;
-      border-color: #990000;
-    font-size: 45px; }
+      border-color: #FF7777;
+    font-size: 0px; }
     @media screen and (max-width: 520px) {
       .tile.tile-256 .tile-inner {
         font-size: 25px; } }
-  .tile.tile-512 .tile-inner {
-      color: #FFAA99;
-    background: #FFAA99;
-    box-shadow: 0 0 4px 2px rgba(255, 255, 255, 1);
+  .tile.tile-512 .tile-inner { /*Orange*/
+      color: #FFAA00;
+    background: #FFAA00;
+    box-shadow: 0 0 4px 2px rgba(255, 119, 0, 1);
     border: 3px;
     border-style: solid;
-      border-color: #FFAA99;
-    font-size: 45px; }
+      border-color: #FFBB22;
+    font-size: 0px; }
     @media screen and (max-width: 520px) {
       .tile.tile-512 .tile-inner {
         font-size: 25px; } }
-  .tile.tile-1024 .tile-inner {
-    color: #DDBBCC;
-    background: #DDBBCC;
-    box-shadow: 0 0 4px 2px rgba(255, 255, 255, 1);
+  .tile.tile-1024 .tile-inner { /*Yellow*/
+      color: #FBFE00;
+    background: #FBFE00;
+    box-shadow: 0 0 4px 2px rgba(255, 255, 128, 1);
     border: 3px;
     border-style: solid;
-      border-color: #DDBBCC;
+      border-color: #DDDD66;
     font-size: 35px; }
     @media screen and (max-width: 520px) {
       .tile.tile-1024 .tile-inner {
         font-size: 15px; } }
-  .tile.tile-2048 .tile-inner {
-      color: #FFBBAA;
-      background: #FFBBAA;
-      box-shadow: 0 0 4px 2px rgba(255, 255, 255, 1);
+  .tile.tile-2048 .tile-inner { /*Green - Item when reached?*/
+      color: #0000FF;
+      background: #0000FF;
+      box-shadow: 0 0 4px 2px rgba(0, 0, 255, 1);
       border: 3px;
       border-style: solid;
-      border-color: #FFBBAA;
+      border-color: #6666FF;
     font-size: 35px; }
     @media screen and (max-width: 520px) {
       .tile.tile-2048 .tile-inner {
