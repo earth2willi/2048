@@ -3,7 +3,7 @@ html, body {
   margin: 0;
   padding: 0;
   background: #330033  url('http://www.sejus.com/earth2willi/images/novaluna.gif');
-  background-size: 500px 500px;
+  background-size: 100% 100%;
   background-repeat: repeat;
   color: #776e65;
   font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
