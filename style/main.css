@@ -40,16 +40,16 @@ h1.title {
     
     50% {
         opacity: 0.5;
-        -webkit-transform: scale(2) rotate(-360deg);
-        -moz-transform: scale(2) rotate(-360deg);
-        transform: scale(2) rotate(-360deg);
+        -webkit-transform: scale(2) rotate(-45deg);
+        -moz-transform: scale(2) rotate(-45deg);
+        transform: scale(2) rotate(-45deg);
     /*box-shadow: 0 0 25px 10px rgba(255, 255, 255, 0.5)*/;}
     
     100% {
         opacity: 0;
--webkit-transform: scale(5) rotate(-720deg);
--moz-transform: scale(5) rotate(-720deg);
-transform: scale(5) rotate(-720deg);
+-webkit-transform: scale(5) rotate(-90deg);
+-moz-transform: scale(5) rotate(-90deg);
+transform: scale(5) rotate(-90deg);
 /*        box-shadow: 0 0 25px 10px rgba(255, 255, 255, 0.5);*/} }
 
 @-moz-keyframes fade-in-out {
