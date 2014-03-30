@@ -36,34 +36,21 @@ h1.title {
         -webkit-transform: scale(0) rotate(0deg);
         -moz-transform: scale(0) rotate(0deg);
         transform: scale(0) rotate(0deg);
-        box-shadow: 0 0 0px 0px rgba(255, 255, 255, 0.5);}
-    
-    25% {
-        opacity: .5;
-        -webkit-transform: scale(1) rotate(360deg);
-        -moz-transform: scale(1) rotate(360deg);
-        transform: scale(1) rotate(360deg);
-        box-shadow: 0 0 25px 10px rgba(255, 255, 255, 0.5);}
+ /*       box-shadow: 0 0 0px 0px rgba(255, 255, 255, 0.5)*/;}
     
     50% {
-        opacity: .5;
--webkit-transform: scale(1) rotate(360deg);
--moz-transform: scale(1) rotate(360deg);
-transform: scale(1) rotate(360deg);
-box-shadow: 0 0 25px 10px rgba(255, 255, 255, 0.5);}
-    75% {
-        opacity: .5;
-        -webkit-transform: scale(1) rotate(360deg);
-        -moz-transform: scale(1) rotate(360deg);
-        transform: scale(1) rotate(360deg);
-        box-shadow: 0 0 25px 10px rgba(255, 255, 255, 0.5);}
+        opacity: 0.5;
+        -webkit-transform: scale(2) rotate(-360deg);
+        -moz-transform: scale(2) rotate(-360deg);
+        transform: scale(2) rotate(-360deg);
+    /*box-shadow: 0 0 25px 10px rgba(255, 255, 255, 0.5)*/;}
     
     100% {
         opacity: 0;
--webkit-transform: scale(2) rotate(720deg);
--moz-transform: scale(2) rotate(720deg);
-transform: scale(2) rotate(720deg);
-        box-shadow: 0 0 25px 10px rgba(255, 255, 255, 0.5);} }
+-webkit-transform: scale(5) rotate(-720deg);
+-moz-transform: scale(5) rotate(-720deg);
+transform: scale(5) rotate(-720deg);
+/*        box-shadow: 0 0 25px 10px rgba(255, 255, 255, 0.5);*/} }
 
 @-moz-keyframes fade-in-out {
     0% {
@@ -205,16 +192,15 @@ transform: scale(2) rotate(720deg);
     
     height: auto;
     margin-top: 10px;
-    display: block;
     text-align: center;
     vertical-align: middle;
     float: center;
 
 
-    line-height: 60px;
-    -webkit-animation: fade-in-out 600ms ease 300ms;
-    -moz-animation: fade-in-out 600ms ease 300ms;
-    animation: fade-in-out 600ms ease 300ms;
+    line-height: auto;
+    -webkit-animation: fade-in-out 600ms ease 100ms;
+    -moz-animation: fade-in-out 600ms ease 100ms;
+    animation: fade-in-out 600ms ease 100ms;
     -webkit-animation-fill-mode: both;
     -moz-animation-fill-mode: both;
     animation-fill-mode: both; }
