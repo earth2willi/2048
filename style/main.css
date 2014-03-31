@@ -2,9 +2,9 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: #330033  url('http://www.sejus.com/earth2willi/images/novaluna.gif');
-  background-size: 100% 100%;
-  background-repeat: repeat;
+  background: #330033  /*url('http://www.sejus.com/earth2willi/images/novaluna.gif')*/;
+  background-size: cover;
+  background-repeat: fill;
   color: #776e65;
   font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 18px;
@@ -38,21 +38,20 @@ h1.title {
         -webkit-transform: scale(0) rotate(0deg);
         -moz-transform: scale(0) rotate(0deg);
         transform: scale(0) rotate(0deg);
- /*       box-shadow: 0 0 0px 0px rgba(255, 255, 255, 0.5)*/;}
+  /*     box-shadow: 0 0 0px 0px rgba(255, 255, 255, 0.5)*/;}
     
     50% {
         opacity: 0.5;
-        -webkit-transform: scale(2) rotate(-45deg);
-        -moz-transform: scale(2) rotate(-45deg);
-        transform: scale(2) rotate(-45deg);
-    /*box-shadow: 0 0 25px 10px rgba(255, 255, 255, 0.5)*/;}
-    
+        -webkit-transform: scale(2) rotate(-90deg);
+        -moz-transform: scale(2) rotate(-90deg);
+        transform: scale(2) rotate(-90deg);
+  /* box-shadow: 0 0 25px 10px rgba(255, 255, 255, 0.5)*/;}
     100% {
         opacity: 0;
--webkit-transform: scale(5) rotate(-90deg);
--moz-transform: scale(5) rotate(-90deg);
-transform: scale(5) rotate(-90deg);
-/*        box-shadow: 0 0 25px 10px rgba(255, 255, 255, 0.5);*/} }
+-webkit-transform: scale(5) rotate(-180deg);
+-moz-transform: scale(5) rotate(-180deg);
+transform: scale(5) rotate(-180deg);
+   /*   box-shadow: 0 0 25px 10px rgba(255, 255, 255, 0.5);*/} }
 
 @-moz-keyframes fade-in-out {
     0% {
@@ -128,18 +127,18 @@ transform: scale(5) rotate(-90deg);
 
 
 @-webkit-keyframes background-gradient-change {
-    0%   {background: #bbffff  url('http://www.sejus.com/earth2willi/images/novaluna.gif');
+    0%   {background: #bbffff /* url('http://www.sejus.com/earth2willi/images/novaluna.gif')*/;
         background-position: 0% 0px;
 }
-    33%  {background: #ffbbff  url('http://www.sejus.com/earth2willi/images/novaluna.gif');
+    33%  {background: #ffbbff /* url('http://www.sejus.com/earth2willi/images/novaluna.gif')*/;
         background-position: -33% 0px;
     }
 
-    66%  {background: #ffffbb  url('http://www.sejus.com/earth2willi/images/novaluna.gif');
+    66%  {background: #ffffbb /* url('http://www.sejus.com/earth2willi/images/novaluna.gif')*/;
         background-position: -66% 0px;
     }
 
-    100%   {background: #bbffff  url('http://www.sejus.com/earth2willi/images/novaluna.gif');
+    100%   {background: #bbffff /* url('http://www.sejus.com/earth2willi/images/novaluna.gif')*/;
         background-position: -100% 0px;
     }
 }
@@ -198,16 +197,13 @@ transform: scale(5) rotate(-90deg);
     position:fixed;
     font-size: 200px;
     
-    background:   url('http://upload.wikimedia.org/wikipedia/commons/d/d0/禪-ouyang.png');
+ /*   background:   url('http://upload.wikimedia.org/wikipedia/commons/d/d0/禪-ouyang.png');
         background-size: cover;
-     font-weight: 0;
    
-    
+  */
+ 
+ 
     height: 300px; /*must be a pixel value or game over screen breaks??*/
-    margin-top: 10px;
-    text-align: center;
-    vertical-align: middle;
-    float: center;
 
 
     line-height: auto;
