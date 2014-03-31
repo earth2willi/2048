@@ -35,9 +35,9 @@ h1.title {
 @-webkit-keyframes fade-in-out {
     0% {
         opacity: 0;
-        -webkit-transform: scale(0) rotate(0deg);
-        -moz-transform: scale(0) rotate(0deg);
-        transform: scale(0) rotate(0deg);
+        -webkit-transform: scale(1) rotate(0deg);
+        -moz-transform: scale(1) rotate(0deg);
+        transform: scale(1) rotate(0deg);
   /*     box-shadow: 0 0 0px 0px rgba(255, 255, 255, 0.5)*/;}
     
     50% {
@@ -48,9 +48,9 @@ h1.title {
   /* box-shadow: 0 0 25px 10px rgba(255, 255, 255, 0.5)*/;}
     100% {
         opacity: 0;
--webkit-transform: scale(5) rotate(-180deg);
--moz-transform: scale(5) rotate(-180deg);
-transform: scale(5) rotate(-180deg);
+-webkit-transform: scale(8) rotate(-180deg);
+-moz-transform: scale(8) rotate(-180deg);
+transform: scale(8) rotate(-180deg);
    /*   box-shadow: 0 0 25px 10px rgba(255, 255, 255, 0.5);*/} }
 
 @-moz-keyframes fade-in-out {
@@ -195,7 +195,7 @@ transform: scale(5) rotate(-180deg);
     z-index: 100;}
 .game-container .doge-says p {
     position:fixed;
-    font-size: 200px;
+    font-size: 100px;
     
  /*   background:   url('http://upload.wikimedia.org/wikipedia/commons/d/d0/禪-ouyang.png');
         background-size: cover;
@@ -203,7 +203,7 @@ transform: scale(5) rotate(-180deg);
   */
  
  
-    height: 300px; /*must be a pixel value or game over screen breaks??*/
+    height: 150px; /*must be a pixel value or game over screen breaks??*/
 
 
     line-height: auto;
