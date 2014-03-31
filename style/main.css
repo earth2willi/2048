@@ -42,15 +42,15 @@ h1.title {
     
     50% {
         opacity: 0.5;
-        -webkit-transform: scale(2) rotate(-90deg);
+        -webkit-transform: scale(3) rotate(-90deg);
         -moz-transform: scale(2) rotate(-90deg);
         transform: scale(2) rotate(-90deg);
   /* box-shadow: 0 0 25px 10px rgba(255, 255, 255, 0.5)*/;}
     100% {
         opacity: 0;
--webkit-transform: scale(8) rotate(-180deg);
--moz-transform: scale(8) rotate(-180deg);
-transform: scale(8) rotate(-180deg);
+-webkit-transform: scale(10) rotate(-180deg);
+-moz-transform: scale(10) rotate(-180deg);
+transform: scale(10) rotate(-180deg);
    /*   box-shadow: 0 0 25px 10px rgba(255, 255, 255, 0.5);*/} }
 
 @-moz-keyframes fade-in-out {
@@ -203,13 +203,13 @@ transform: scale(8) rotate(-180deg);
   */
  
  
-    height: 150px; /*must be a pixel value or game over screen breaks??*/
+    height: 142px; /*must be a pixel value or game over screen breaks??*/
 
 
     line-height: auto;
-    -webkit-animation: fade-in-out 600ms linear 0ms;
-    -moz-animation: fade-in-out 600ms ease 0ms;
-    animation: fade-in-out 600ms ease 0ms;
+    -webkit-animation: fade-in-out 600ms linear 10ms;
+    -moz-animation: fade-in-out 600ms linear 10ms;
+    animation: fade-in-out 600ms linear 10ms;
     -webkit-animation-fill-mode: both;
     -moz-animation-fill-mode: both;
     animation-fill-mode: both; }
