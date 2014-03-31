@@ -3,14 +3,17 @@ function HTMLActuator() {
   this.scoreContainer   = document.querySelector(".score-container");
   this.bestContainer    = document.querySelector(".best-container");
   this.messageContainer = document.querySelector(".game-message");
+    this.scoreMultiplierContainer  = document.querySelector(".score-multiplier");
     this.info             = document.querySelector(".info");
     this.dogeSays = document.querySelector(".doge-says");
     this.adSpace = document.querySelector(".shout-out");
-
+    
   this.score = 0;
+    this.scoreMultiplier = 0;
+    
 }
-
-var dogeSayings = ['☯', '☆', '✩', '✫', '✮', '✯', '✴', '✵', '❅', '✻', '✾', '✼', '❀', '❁', '❂', '❃','۞', '❇', '❈', '࿂', '❉', '❊', '❋', '⛥', '✧', '✇', '⏣', '◈', '⛯', /*'★', '৩', '࿗', '࿇', '࿋', '࿌', '࿔',  '࿅', '࿇', '☮', '☺', '☻', '禅'*/]
+var scoreMultiplier = 0;
+var dogeSayings = ['☯', '☆', '✩', '✫', '✮', '✯', '✴', '✵', '❅', '✻', '✾', '✼', '❀', '❁', '❂', '❃','۞', '❇', '❈', '࿂', '❉', '❊', '❋', '⛥', '✧', '✇', '⏣', '◈', '⛯', '★', '৩', '࿗', '࿇', '࿋', '࿌', '࿅', '࿇', 'Ⰿ', '⸙', /*'☮', '☺', '☻', '࿔','禅'*/]
 
 var ads = [
            '<a href="http://snackcompass.com/" target="_blank">Like Pizza?</a>',
@@ -35,7 +38,7 @@ HTMLActuator.prototype.actuate = function (grid, metadata) {
 
     self.updateScore(metadata.score);
     self.updateBestScore(metadata.bestScore);
-
+    //self.updateScoreMultiplier(metadata.scoreMultiplier);
     if (metadata.terminated) {
       if (metadata.over) {
         self.message(false); // You lose
@@ -118,7 +121,6 @@ HTMLActuator.prototype.positionClass = function (position) {
 HTMLActuator.prototype.updateScore = function (score) {
   this.clearContainer(this.scoreContainer);
     this.clearContainer(this.dogeSays)
-    
   var difference = score - this.score;
   this.score = score;
 
@@ -148,6 +150,23 @@ HTMLActuator.prototype.updateScore = function (score) {
   
   
   }
+};
+
+HTMLActuator.prototype.updateScoreMultiplier = function (scoreMultiplier) {
+    this.clearContainer(this.scoreMultiplierContainer);
+    var scoreMultiplier = score - this.score;
+    this.scoreMultiplier = difference;
+
+    this.scoreMultiplierContainer.textContent = this.scoreMultiplier;
+
+    //multiplier
+    if (scoreMultiplier > 0) {
+     var scoreMultiplier = document.createElement("div");
+     addition.class.add("score-multiplier");
+     addition.textContent = "+" + difference;
+     this.scoreMultiplierContainer.appendChild(addition);
+    }
+
 };
 
 HTMLActuator.prototype.updateBestScore = function (bestScore) {

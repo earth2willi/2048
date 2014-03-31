@@ -80,7 +80,7 @@ KeyboardInputManager.prototype.listen = function () {
   gameContainer.addEventListener(this.eventTouchstart, function (event) {
     if ((!window.navigator.msPointerEnabled && event.touches.length > 1) ||
         event.targetTouches > 1) {
-      return; // Ignore if touching with more than 1 finger
+      return; // Ignore touches with more than 1 finger -- Show help or menu instead?
     }
 
     if (window.navigator.msPointerEnabled) {

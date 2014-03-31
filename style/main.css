@@ -41,7 +41,7 @@ h1.title {
   /*     box-shadow: 0 0 0px 0px rgba(255, 255, 255, 0.5)*/;}
     
     50% {
-        opacity: 0.5;
+        opacity: 0.60;
         -webkit-transform: scale(3) rotate(-90deg);
         -moz-transform: scale(2) rotate(-90deg);
         transform: scale(2) rotate(-90deg);
@@ -181,7 +181,7 @@ transform: scale(10) rotate(-180deg);
     top: -50px;
     opacity: 0; } }
 .scores-container {
-  float: right;
+  float: center;
   text-align: right; }
 
 
@@ -290,7 +290,7 @@ transform: scale(10) rotate(-180deg);
 
 
 
-.score-container, .best-container {
+.score-container, .best-container, .score-multiplier-container {
   position: relative;
   display: inline-block;
   background: #777777;
@@ -303,7 +303,7 @@ transform: scale(10) rotate(-180deg);
   color: white;
   margin-top: 8px;
   text-align: center; }
-  .score-container:after, .best-container:after {
+.score-container:after, .best-container:after, .score-multiplier-container:after {
     position: absolute;
     width: 100%;
     top: 10px;
@@ -313,7 +313,7 @@ transform: scale(10) rotate(-180deg);
     line-height: 13px;
     text-align: center;
     color: #eee4da; }
-  .score-container .score-addition, .best-container .score-addition {
+  .score-container .score-addition, .best-container .score-addition, .score-multiplier-container .score-multiplier {
     position: absolute;
     right: 30px;
     color: red;
@@ -334,6 +334,9 @@ transform: scale(10) rotate(-180deg);
 
 .best-container:after {
   content: "Best"; }
+
+.score-multiplier-container:after {
+    content: "Mult";}
 
 .restart-button {
     display: inline-block;
@@ -1003,7 +1006,6 @@ font-size: 0px; }
 
 .tile-merged .tile-inner {
     z-index: 700;
-    
     -webkit-animation: pop-game-container-glow 300ms ease 200ms, pop 250ms ease 175ms;
     -moz-animation: pop-game-container-glow 300ms ease 200ms, pop 250ms ease 175ms;
     animation: pop-game-container-glow 300ms ease 200ms, pop 250ms ease 175ms;
@@ -1042,7 +1044,7 @@ font-size: 0px; }
     width: 280px;
     margin: 0 auto; }
 
-  .score-container, .best-container {
+  .score-container, .best-container, .score-multiplier-container, {
     margin-top: 0;
     padding: 15px 10px;
     min-width: 40px; }
