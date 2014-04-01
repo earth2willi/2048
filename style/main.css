@@ -10,15 +10,15 @@ html, body {
  background-position: center;
      background-size: 60% 60%, 60% 60%;
      background-color: hsla(320,80%,60%,1);
-     background-image: repeating-radial-gradient( hsla(320,100%,60%,.6) 0px, hsla(220,100%,60%,0) 60%),
-     repeating-radial-gradient( hsla(330,100%,40%,1) 12%, hsla(320,80%,60%,1) 24px);
+     background-image: repeating-radial-gradient( hsla(320,100%,60%,.6) 0px, hsla(220,100%,60%,0), hsla(320,100%,60%,.6)  60%),
+     repeating-radial-gradient( hsla(330,100%,50%,1) 12%, hsla(320,80%,70%,1),  hsla(330,100%,50%,1) 24px);
  
 
   color: #776e65;
   font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 18px;
 
-    -webkit-animation: background-gradient-change 6s cubic-bezier(.1,.4,.9,.6) infinite ;
+    -webkit-animation: background-gradient-change 6s cubic-bezier(.1,.4,.9,.6) infinite alternate;
     -moz-animation: background-gradient-change 6s cubic-bezier(.1,.4,.9,.6) infinite ;
     animation: background-gradient-change 6s cubic-bezier(.1,.4,.9,.6) infinite ;}
 }
