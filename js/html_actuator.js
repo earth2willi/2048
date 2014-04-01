@@ -13,7 +13,7 @@ function HTMLActuator() {
     
 }
 var scoreMultiplier = 0;
-var dogeSayings = ['☯', '☆', '✩', '✫', '✮', '✯', '✴', '✵', '❅', '✻', '✾', '✼', '❀', '❁', '❂', '❃','۞', '❇', '❈', '࿂', '❉', '❊', '❋', '⛥', '✧', '✇', '⏣', '◈', '⛯', '★', '৩', '࿗', '࿇', '࿋', '࿌', '࿅', '࿇', 'Ⰿ', '⸙', /*'☮', '☺', '☻', '࿔','禅'*/]
+var dogeSayings = ['☯', '☆', '✩', '✫', '✮', '✯', '✴', '✵', '❅', '✻', '✾', '✼', '❀', '❁', '❂', '❃','۞', '❇', '❈', '࿂', '❉', '❊', '❋', '⛥', '✧', '✇', '⏣', '◈', '⛯', '★', '৩', '࿗', '࿇', '࿋', '࿌', '࿅', '࿇', 'Ⰿ', '⸙','☮', '☺', '☻', '࿔', /*'禅'*/]
 
 var ads = [
            '<a href="http://snackcompass.com/" target="_blank">Like Pizza?</a>',
@@ -155,7 +155,7 @@ HTMLActuator.prototype.updateScore = function (score) {
 HTMLActuator.prototype.updateScoreMultiplier = function (scoreMultiplier) {
     this.clearContainer(this.scoreMultiplierContainer);
     var scoreMultiplier = score - this.score;
-    this.scoreMultiplier = difference;
+    this.scoreMultiplier = scoreMultiplier;
 
     this.scoreMultiplierContainer.textContent = this.scoreMultiplier;
 
