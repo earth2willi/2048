@@ -2,6 +2,8 @@
 html, body {
   margin: 0;
   padding: 0;
+  min-height: 100%;
+  
  /* background: #330033  /*url('http://www.sejus.com/earth2willi/images/novaluna.gif')*/;
  /* background-size: cover;
   background-repeat: fill;*/
@@ -18,9 +20,9 @@ html, body {
   font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 18px;
 
-    -webkit-animation: background-gradient-change 26s ease-in-out infinite alternate;
-    -moz-animation: background-gradient-change 26s ease-in-out infinite ;
-    animation: background-gradient-change 26s ease-in-out infinite ;}
+    -webkit-animation: background-gradient-change 5s ease-in-out infinite ;
+    -moz-animation: background-gradient-change 5s ease-in-out infinite ;
+    animation: background-gradient-change 5s ease-in-out infinite ;}
 }
 
 
@@ -135,9 +137,12 @@ transform: scale(10) rotate(-180deg);
 
 
 @-webkit-keyframes background-gradient-change {
-        from { background-size:  200px  200px,  100px  100px; }
-        50%  { background-size: 800px 800px, 400px 400px; }
-        to   { background-size:  200px  200px, 100px 100px; }
+        0% { background-size:  100px  100px,  50px  50px;
+}
+        50%  { background-size: 800px 800px, 400px 400px;
+}
+        100%   { background-size:  100px  100px, 50px 50px;
+}
     }
     
     
@@ -442,7 +447,7 @@ hr {
   100% {
     opacity: 1; } }
 .game-container {
-  margin-top: 0px;
+  margin-top: 10px;
   position: relative;
   padding: 15px;
   cursor: default;
