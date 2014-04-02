@@ -260,7 +260,7 @@ transform: scale(10) rotate(-180deg);
     font-weight: bold;
     border-radius: 3px;
     color: white;
-    margin-top: 8px;
+    margin-top: 10px;
     width: 36px;
     text-align: center; }
 .info-container a, .hide-info a{
@@ -309,7 +309,7 @@ transform: scale(10) rotate(-180deg);
   font-weight: bold;
   border-radius: 3px;
   color: white;
-  margin-top: 8px;
+  margin-top: 10px;
   text-align: center;
   -webkit-animation: restart-gradient-change 5s infinite;
   -moz-animation: restart-gradient-change 5s infinite;
@@ -442,7 +442,7 @@ hr {
   100% {
     opacity: 1; } }
 .game-container {
-  margin-top: 10px;
+  margin-top: 0px;
   position: relative;
   padding: 15px;
   cursor: default;
