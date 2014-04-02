@@ -20,9 +20,9 @@ html, body {
   font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 18px;
 
-    -webkit-animation: background-gradient-change 5s ease-in-out infinite ;
-    -moz-animation: background-gradient-change 5s ease-in-out infinite ;
-    animation: background-gradient-change 5s ease-in-out infinite ;}
+    -webkit-animation: background-gradient-change 15s ease-in-out infinite ;
+    -moz-animation: background-gradient-change 15s ease-in-out infinite ;
+    animation: background-gradient-change 15s ease-in-out infinite ;}
 }
 
 
@@ -48,19 +48,22 @@ h1.title {
         -webkit-transform: scale(1) rotate(0deg);
         -moz-transform: scale(1) rotate(0deg);
         transform: scale(1) rotate(0deg);
+        -webkit-text-stroke: 1px #8888FF;
   /*     box-shadow: 0 0 0px 0px rgba(255, 255, 255, 0.5)*/;}
     
     50% {
-        opacity: 0.60;
+        opacity: 0.75;
         -webkit-transform: scale(3) rotate(-90deg);
         -moz-transform: scale(2) rotate(-90deg);
         transform: scale(2) rotate(-90deg);
+           -webkit-text-stroke: 1px #FF88FF;
   /* box-shadow: 0 0 25px 10px rgba(255, 255, 255, 0.5)*/;}
     100% {
         opacity: 0;
 -webkit-transform: scale(10) rotate(-180deg);
 -moz-transform: scale(10) rotate(-180deg);
 transform: scale(10) rotate(-180deg);
+   -webkit-text-stroke: 1px #FFFFFF;
    /*   box-shadow: 0 0 25px 10px rgba(255, 255, 255, 0.5);*/} }
 
 @-moz-keyframes fade-in-out {
@@ -209,7 +212,8 @@ transform: scale(10) rotate(-180deg);
 .game-container .doge-says p {
     position:fixed;
     font-size: 100px;
-    
+    stroke-opacity: 1;
+    -webkit-text-stroke: 1px #AAAAFF;
  /*   background:   url('http://upload.wikimedia.org/wikipedia/commons/d/d0/禪-ouyang.png');
         background-size: cover;
    

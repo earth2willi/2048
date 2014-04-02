@@ -152,6 +152,7 @@ HTMLActuator.prototype.updateScore = function (score) {
   }
 };
 
+/*
 HTMLActuator.prototype.updateScoreMultiplier = function (scoreMultiplier) {
     this.clearContainer(this.scoreMultiplierContainer);
     var scoreMultiplier = score - this.score;
@@ -168,7 +169,7 @@ HTMLActuator.prototype.updateScoreMultiplier = function (scoreMultiplier) {
     }
 
 };
-
+*/
 HTMLActuator.prototype.updateBestScore = function (bestScore) {
   this.bestContainer.textContent = bestScore;
 };
