@@ -1,6 +1,6 @@
 @import url(fonts/clear-sans.css);
 html, body {
-  margin: 10;
+  margin: 0;
   padding: 0;
  /* background: #330033  /*url('http://www.sejus.com/earth2willi/images/novaluna.gif')*/;
  /* background-size: cover;
@@ -8,19 +8,19 @@ html, body {
  
  height: 100%;
  background-position: center;
-     background-size: 60% 60%, 60% 60%;
+     background-size: 100%;
      background-color: hsla(320,80%,60%,1);
-     background-image: repeating-radial-gradient( hsla(320,100%,60%,.6) 0px, hsla(220,100%,60%,0), hsla(320,100%,60%,.6)  60%),
-     repeating-radial-gradient( hsla(330,100%,50%,1) 12%, hsla(320,80%,70%,1),  hsla(330,100%,50%,1) 24px);
+     background-image: repeating-radial-gradient( hsla(320,100%,60%,.5) 0px, hsla(220,100%,60%,0), hsla(320,100%,60%,.5)  60%),
+     repeating-radial-gradient( hsla(330,100%,50%,1) 12%, hsla(320,80%,70%,1),  hsla(330,100%,50%,1) 100px);
  
 
   color: #776e65;
   font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 18px;
 
-    -webkit-animation: background-gradient-change 6s cubic-bezier(.1,.4,.9,.6) infinite alternate;
-    -moz-animation: background-gradient-change 6s cubic-bezier(.1,.4,.9,.6) infinite ;
-    animation: background-gradient-change 6s cubic-bezier(.1,.4,.9,.6) infinite ;}
+    -webkit-animation: background-gradient-change 26s ease-in-out infinite alternate;
+    -moz-animation: background-gradient-change 26s ease-in-out infinite ;
+    animation: background-gradient-change 26s ease-in-out infinite ;}
 }
 
 
@@ -135,9 +135,9 @@ transform: scale(10) rotate(-180deg);
 
 
 @-webkit-keyframes background-gradient-change {
-        from { background-size:  60px  60px,  24px  24px; }
-        50%  { background-size: 120px 120px, 100px 100px; }
-        to   { background-size:  24px  24px, 140px 140px; }
+        from { background-size:  200px  200px,  100px  100px; }
+        50%  { background-size: 800px 800px, 400px 400px; }
+        to   { background-size:  200px  200px, 100px 100px; }
     }
     
     
