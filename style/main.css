@@ -1,19 +1,19 @@
 @import url(fonts/clear-sans.css);
 html, body {
-  margin: 0;
+  margin: 10;
   padding: 0;
   min-height: 100%;
   
- /* background: #330033  /*url('http://www.sejus.com/earth2willi/images/novaluna.gif')*/;
+ background: #330033  /*url('http://www.sejus.com/earth2willi/images/novaluna.gif')*/;
  /* background-size: cover;
   background-repeat: fill;*/
  
  height: 100%;
  background-position: center;
      background-size: 100%;
-     background-color: hsla(320,80%,60%,1);
+ /*    background-color: hsla(320,80%,60%,1);
      background-image: repeating-radial-gradient( hsla(320,100%,60%,.5) 0px, hsla(220,100%,60%,0), hsla(320,100%,60%,.5)  60%),
-     repeating-radial-gradient( hsla(330,100%,50%,1) 12%, hsla(320,80%,70%,1),  hsla(330,100%,50%,1) 100px);
+     repeating-radial-gradient( hsla(330,100%,50%,1) 12%, hsla(320,80%,70%,1),  hsla(330,100%,50%,1) 100px);*/
  
 
   color: #776e65;
@@ -48,22 +48,22 @@ h1.title {
         -webkit-transform: scale(1) rotate(0deg);
         -moz-transform: scale(1) rotate(0deg);
         transform: scale(1) rotate(0deg);
-        -webkit-text-stroke: 1px #8888FF;
+        -webkit-text-stroke: 1px #2222FF;
   /*     box-shadow: 0 0 0px 0px rgba(255, 255, 255, 0.5)*/;}
     
     50% {
-        opacity: 0.75;
-        -webkit-transform: scale(3) rotate(-90deg);
+        opacity: .85;
+        -webkit-transform: scale(3) rotate(-180deg);
         -moz-transform: scale(2) rotate(-90deg);
         transform: scale(2) rotate(-90deg);
-           -webkit-text-stroke: 1px #FF88FF;
+           -webkit-text-stroke: 1px #FFFFFF;
   /* box-shadow: 0 0 25px 10px rgba(255, 255, 255, 0.5)*/;}
     100% {
         opacity: 0;
--webkit-transform: scale(10) rotate(-180deg);
+-webkit-transform: scale(10) rotate(-360deg);
 -moz-transform: scale(10) rotate(-180deg);
 transform: scale(10) rotate(-180deg);
-   -webkit-text-stroke: 1px #FFFFFF;
+   -webkit-text-stroke: 1px #FF44FF;
    /*   box-shadow: 0 0 25px 10px rgba(255, 255, 255, 0.5);*/} }
 
 @-moz-keyframes fade-in-out {
@@ -140,14 +140,20 @@ transform: scale(10) rotate(-180deg);
 
 
 @-webkit-keyframes background-gradient-change {
+    
+    /*
         0% { background-size:  100px  100px,  50px  50px;
 }
         50%  { background-size: 800px 800px, 400px 400px;
 }
         100%   { background-size:  100px  100px, 50px 50px;
-}
-    }
-    
+}*/
+     
+     0%   {background: #bbffff;}
+     33%  {background: #ffbbff;}
+     66%  {background: #ffffbb;}
+    100%   {background: #bbffff;}}
+
     
         /*background: #bbffff url('http://www.sejus.com/earth2willi/images/novaluna.gif');
         background-position: 0% 0px;
@@ -208,7 +214,7 @@ transform: scale(10) rotate(-180deg);
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 100;}
+    z-index: 0;}
 .game-container .doge-says p {
     position:fixed;
     font-size: 100px;
@@ -224,9 +230,9 @@ transform: scale(10) rotate(-180deg);
 
 
     line-height: auto;
-    -webkit-animation: fade-in-out 600ms linear 10ms;
-    -moz-animation: fade-in-out 600ms linear 10ms;
-    animation: fade-in-out 600ms linear 10ms;
+    -webkit-animation: fade-in-out 700ms ease 10ms;
+    -moz-animation: fade-in-out 600ms ease 10ms;
+    animation: fade-in-out 600ms ease 10ms;
     -webkit-animation-fill-mode: both;
     -moz-animation-fill-mode: both;
     animation-fill-mode: both; }
@@ -656,9 +662,9 @@ hr {
 
 .tile {
   position: absolute;
-  -webkit-transition: 100ms ease-in-out;
-  -moz-transition: 100ms ease-in-out;
-  transition: 100ms ease-in-out;
+  -webkit-transition:  200ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  -moz-transition:  200ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: 200ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
   -webkit-transition-property: -webkit-transform;
   -moz-transition-property: -moz-transform;
   transition-property: transform; }
@@ -794,25 +800,25 @@ font-size: 0px; }
 
   50% {
     opacity: 1;
-    -webkit-transform: scale(1.5,.75);
+    -webkit-transform: scale(1.75,.75);
     -moz-transform: scale(1.5,.75);
     transform: scale(1.5,.75); }
 
   60% {
     opacity: 1;
-    -webkit-transform: scale(.8,1.4);
+    -webkit-transform: scale(.8,1.6);
     -moz-transform: scale(.8,1.4);
     transform: scale(.8,1.4); }
 
   70% {
     opacity: 1;
-    -webkit-transform: scale(1.2,.9);
+    -webkit-transform: scale(1.5,.9);
     -moz-transform: scale(1.2,.9);
     transform: scale(1.2,.9); }
 
   80% {
     opacity: 1;
-    -webkit-transform: scale(.95,1.1);
+    -webkit-transform: scale(.95,1.2);
     -moz-transform: scale(.95,1.1);
     transform: scale(.95,1.1); }
 
@@ -933,24 +939,24 @@ font-size: 0px; }
 
   50% {
     opacity: 0.5;
-    -webkit-transform: scale(1.5) rotate(360deg);
+    -webkit-transform: scale(1.75) rotate(360deg);
     -moz-transform: scale(1.5) rotate(360deg);
     transform: scale(1.5) rotate(360deg);
-  box-shadow: 0 0 50px 30px rgba(255, 153, 102, .7);}
+  box-shadow: 0 0 100px 60px rgba(255, 153, 102, .9);}
 
   90% {
     opacity: 0.9;
-    -webkit-transform: scale(0.8) rotate(780deg);
+    -webkit-transform: scale(0.9) rotate(780deg);
     -moz-transform: scale(0.8) rotate(780deg);
     transform: scale(0.8) rotate(780deg);
-  box-shadow: 0 0 40px 25px rgba(255, 255, 0, .5);}
+  box-shadow: 0 0 80px 50px rgba(255, 255, 0, .75);}
 
   95% {
     opacity: 0.95;
-    -webkit-transform: scale(1.2) rotate(700deg);
+    -webkit-transform: scale(1.4) rotate(700deg);
     -moz-transform: scale(1.2) rotate(700deg);
     transform: scale(1.2) rotate(700deg);
-  box-shadow: 0 0 30px 20px rgba(0, 255, 0, 0.5);}
+  box-shadow: 0 0 60px 40px rgba(0, 255, 0, 0.5);}
 
   100% {
     opacity: 1;
