@@ -474,7 +474,9 @@ hr {
   -moz-animation: pop-game-container-glow 500ms ease 175ms, game-container-bg-gradient-change linear 5s infinite alternate;
   animation: pop-game-container-glow 500ms ease 175ms, game-container-bg-gradient-change linear 5s infinite alternate;
 
-  border-radius: 6px;
+  border-radius: 5px;
+/*  border-width: 5px;
+  border-style: solid;*/
   width: 500px;
   height: 500px;
   opacity: 1;
@@ -669,23 +671,28 @@ hr {
   -moz-transition-property: -moz-transform;
   transition-property: transform; }
   .tile .tile-inner {
-    border-radius: 3px;
-    background: #eee4da;
+    border-radius: 20px;
+    background: #ffffff;
+    background-size: cover;
+
     text-align: center;
     font-weight: bold;
     z-index: 10;
     font-size: 55px; }
   .tile.tile-2 .tile-inner {
       color: #FFFFFF;
-    background: #FFFFFF ;
-    box-shadow: 0 0 4px 2px rgba(255, 255, 255, 1);
+      background: #FFFFFF;
+ /*     background-image: url('../images/tile-shading-darken.png')*/;
+      background-size: cover;
+      box-shadow: 0 0 2px 2px rgba(255, 255, 255, 1);
       border: 1px;
       border-style: solid;
       border-color: #000000;
 font-size: 0px; }
   .tile.tile-4 .tile-inner {
       color: #DADADA;
-      background: #DADADA;
+      background: #DADADA url('../images/tile-shading-darken.png');
+      background-size: cover;
       box-shadow: 0 0 4px 2px rgba(255, 255, 255, 1);
       border: 2px;
       border-style: solid;
@@ -693,7 +700,8 @@ font-size: 0px; }
  }
   .tile.tile-8 .tile-inner {
       color: #909090;
-      background: #909090;
+      background: #909090 url('../images/tile-shading-darken.png');
+      background-size: cover;
       box-shadow: 0 0 4px 2px rgba(255, 255, 255, 1);
       border: 2px;
       border-style: solid;
@@ -701,7 +709,8 @@ font-size: 0px; }
  }
 .tile.tile-16 .tile-inner {
     color: #505050;
-    background: #505050;
+    background: #505050 url('../images/tile-shading-darken.png');
+    background-size: cover;
       box-shadow: 0 0 4px 2px rgba(128, 128, 128, 1);
       border: 2px;
       border-style: solid;
@@ -709,7 +718,8 @@ font-size: 0px; }
  }
 .tile.tile-32 .tile-inner {
       color: #000000;
-      background: #000000 ;
+      background: #000000  url('../images/tile-shading-lighten.png');
+      background-size: cover;
       box-shadow: 0 0 4px 2px rgba(0, 0, 0, 1);
       border: 2px;
       border-style: solid;
@@ -717,7 +727,8 @@ font-size: 0px; }
 }
   .tile.tile-64 .tile-inner {  /*Deep Blue*/
       color: #555599;
-    background: #555599;
+      background: #555599; url('../images/tile-shading-darken.png');
+      background-size: cover;
     box-shadow: 0 0 4px 2px rgba(150, 255, 255, 1);
     border: 3px;
     border-style: solid;
@@ -726,7 +737,9 @@ font-size: 0px; }
 
   .tile.tile-128 .tile-inner { /*Purple*/
       color: #8110b0;
-      background: #8110b0;
+      background: #8110b0 url('../images/tile-shading-darken.png');
+      background-size: cover;
+
       box-shadow: 0 0 4px 2px rgba(255, 175, 255, 1);
       border: 2px;
       border-style: solid;
@@ -737,7 +750,8 @@ font-size: 0px; }
         font-size: 25px; } }
   .tile.tile-256 .tile-inner { /*Red*/
       color: #CC0000;
-      background: #CC0000;
+      background: #CC0000 url('../images/tile-shading-lighten.png');
+      background-size: cover;
       box-shadow: 0 0 4px 2px rgba(255, 128, 128, 1);
       border: 2px;
       border-style: solid;
@@ -748,7 +762,9 @@ font-size: 0px; }
         font-size: 25px; } }
   .tile.tile-512 .tile-inner { /*Orange*/
       color: #FFAA00;
-    background: #FFAA00;
+      background: #FFAA00 url('../images/tile-shading-lighten.png');
+      background-size: cover;
+
     box-shadow: 0 0 4px 2px rgba(255, 119, 0, 1);
     border: 3px;
     border-style: solid;
