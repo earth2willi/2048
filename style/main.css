@@ -205,8 +205,14 @@ transform: scale(10) rotate(-180deg);
 .scores-container {
   float: center;
   text-align: right; }
-
-
+.restart-layout-container {
+    float: center;
+    text-align: left;
+}
+.multiplier-layout-container {
+    float: center;
+    text-align: right;
+}
 
 /*Doge*/
 
@@ -218,8 +224,8 @@ transform: scale(10) rotate(-180deg);
 .game-container .doge-says p {
     position:fixed;
     font-size: 100px;
+         -webkit-text-stroke: 1px #2222FF;
     stroke-opacity: 1;
-    -webkit-text-stroke: 1px #AAAAFF;
  /*   background:   url('http://upload.wikimedia.org/wikipedia/commons/d/d0/禪-ouyang.png');
         background-size: cover;
    
@@ -322,13 +328,13 @@ transform: scale(10) rotate(-180deg);
   height: 25px;
   line-height: 47px;
   font-weight: bold;
-  border-radius: 3px;
+  border-radius: 100px;
   color: white;
-  margin-top: 10px;
+  margin-top: 5px;
   text-align: center;
-  -webkit-animation: restart-gradient-change 5s infinite;
-  -moz-animation: restart-gradient-change 5s infinite;
-  animation: restart-gradient-change 5s infinite;
+  -webkit-animation: restart-gradient-change 3s infinite;
+  -moz-animation: restart-gradient-change 3s infinite;
+  animation: restart-gradient-change 3s infinite;
   
   
   border: 2px;
@@ -350,7 +356,6 @@ transform: scale(10) rotate(-180deg);
   .score-container .score-addition, .best-container .score-addition, .score-multiplier-container .score-multiplier-addition {
     position: absolute;
     right: 30px;
-    color: red;
     font-size: 25px;
     line-height: 25px;
     font-weight: bold;
@@ -373,26 +378,26 @@ transform: scale(10) rotate(-180deg);
     content: "Mult";}
 
 .restart-button {
+    position: relative;
     display: inline-block;
     background: #555555;
-    border-radius: 2px;
-    padding: 5px 5px;
+    border-radius: 100px;
+    padding: 15px 25px;
     text-decoration: none;
     color: #222222;
     height: auto;
     margin-top: 0px;
-    display: block;
     text-align: center;
-    vertical-align: middle;
+    vertical-align: top;
     float: center;
     font-size: 30px;
     opacity: 1;
     border: 5px ;
     border-style: solid;
     z-index: 50;
-   -webkit-animation: restart-gradient-change linear 6s infinite alternate;
-    -moz-animation: restart-gradient-change linear 6s infinite alternate;
-    animation: restart-gradient-change linear 6s infinite alternate;
+   -webkit-animation: restart-gradient-change linear 11s infinite alternate;
+    -moz-animation: restart-gradient-change linear 11s infinite alternate;
+    animation: restart-gradient-change linear 11s infinite alternate;
 }
 
 @-webkit-keyframes restart-gradient-change {
@@ -685,27 +690,27 @@ hr {
       background: #FFFFFF;
       background-image: url('../images/tile-shading-darken-2.png');
       background-size: cover;
-      box-shadow: 0 0 2px 2px rgba(255, 255, 255, 1);
+   /*   box-shadow: 0 0 2px 2px rgba(255, 255, 255, 1);*/
       border: 1px;
       border-style: solid;
       border-color: #000000;
 font-size: 0px; }
   .tile.tile-4 .tile-inner {
-      border-radius: 50px;
-      color: #DADADA;
-      background: #DADADA url('../images/tile-shading-darken-2.png');
+      border-radius: 48px;
+      color: #D8D8D8;
+      background: #D8D8D8 url('../images/tile-shading-darken-4.png');
       background-size: cover;
-      box-shadow: 0 0 2px 2px rgba(255, 255, 255, 1);
+    /*  box-shadow: 0 0 2px 2px rgba(255, 255, 255, 1);*/
       border: 2px;
       border-style: solid;
       border-color: #000000;
  }
   .tile.tile-8 .tile-inner {
-      border-radius: 42px;
+      border-radius: 40px;
       color: #909090;
-      background: #909090 url('../images/tile-shading-darken.png');
+      background: #909090 url('../images/tile-shading-darken-8.png');
       background-size: cover;
-      box-shadow: 0 0 2px 2px rgba(255, 255, 255, 1);
+     /* box-shadow: 0 0 2px 2px rgba(255, 255, 255, 1);*/
       border: 2px;
       border-style: solid;
       border-color: #000000;
@@ -713,17 +718,17 @@ font-size: 0px; }
 .tile.tile-16 .tile-inner {
     border-radius: 30px;
     color: #505050;
-    background: #505050 url('../images/tile-shading-darken.png');
+    background: #505050 url('../images/tile-shading-darken-16.png');
     background-size: cover;
-      box-shadow: 0 0 2px 2px rgba(128, 128, 128, 1);
+   /*   box-shadow: 0 0 2px 2px rgba(128, 128, 128, 1);*/
       border: 2px;
       border-style: solid;
     border-color: #FFFFFF;
  }
 .tile.tile-32 .tile-inner {
     border-radius: 25px;
-      color: #000000;
-      background: #000000  url('../images/tile-shading-lighten.png');
+    color: #131313;
+      background: #131313  url('../images/tile-shading-darken-32.png');
       background-size: cover;
       box-shadow: 0 0 2px 2px rgba(0, 0, 0, 1);
       border: 2px;
@@ -731,8 +736,8 @@ font-size: 0px; }
     border-color: #FFFFFF;
 }
   .tile.tile-64 .tile-inner {  /*Deep Blue*/
-      color: #555599;
-      background: #555599; url('../images/tile-shading-darken.png');
+      color: #5555BB;
+      background: #5555BB url('../images/tile-shading-blue.png');
       background-size: cover;
     box-shadow: 0 0 2px 2px rgba(150, 255, 255, 1);
     border: 3px;
@@ -743,7 +748,7 @@ font-size: 0px; }
   .tile.tile-128 .tile-inner { /*Purple*/
       border-radius: 15px;
       color: #8110b0;
-      background: #8110b0 url('../images/tile-shading-darken.png');
+      background: #8110b0 url('../images/tile-shading-purple.png');
       background-size: cover;
 
       box-shadow: 0 0 2px 2px rgba(255, 175, 255, 1);
@@ -757,7 +762,7 @@ font-size: 0px; }
   .tile.tile-256 .tile-inner { /*Red*/
       border-radius: 10px;
      color: #CC0000;
-      background: #CC0000 url('../images/tile-shading-lighten.png');
+      background: #CC0000 url('../images/tile-shading-red.png');
       background-size: cover;
       box-shadow: 0 0 2px 2px rgba(255, 128, 128, 1);
       border: 2px;
@@ -770,7 +775,7 @@ font-size: 0px; }
   .tile.tile-512 .tile-inner { /*Orange*/
       border-radius: 5px;
       color: #FFAA00;
-      background: #FFAA00 url('../images/tile-shading-lighten.png');
+      background: #FFAA00 url('../images/tile-shading-orange.png');
       background-size: cover;
 
     box-shadow: 0 0 2px 2px rgba(255, 119, 0, 1);
@@ -784,7 +789,8 @@ font-size: 0px; }
   .tile.tile-1024 .tile-inner { /*Yellow*/
       border-radius: 3px;
       color: #FDFD00;
-    background: #FDFD00;
+    background: #FDFD00 url('../images/tile-shading-yellow.png');
+    background-size: cover;
     box-shadow: 0 0 2px 2px rgba(255, 255, 128, 1);
     border: 3px;
     border-style: solid;
@@ -796,7 +802,8 @@ font-size: 0px; }
   .tile.tile-2048 .tile-inner { /*Green - Item when reached?*/
       border-radius: 2px;
      color: #0000FF;
-      background: #0000FF;
+      background: #0000FF url('../images/tile-shading-green.png');
+      background-size: cover;
       box-shadow: 0 0 2px 2px rgba(0, 0, 255, 1);
       border: 3px;
       border-style: solid;
@@ -1211,7 +1218,7 @@ font-size: 0px; }
     border-radius: 3px;
     background: rgba(238, 228, 218, 0.35); }
     .grid-cell:last-child {
-      margin-right: 0; }
+      margin-right: 10; }
 
   .tile-container {
     position: absolute;
