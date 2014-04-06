@@ -1,18 +1,17 @@
 function HTMLActuator() {
   this.tileContainer    = document.querySelector(".tile-container");
   this.scoreContainer   = document.querySelector(".score-container");
+    this.scoreMultiplierContainer   = document.querySelector(".score-multiplier-container");
   this.bestContainer    = document.querySelector(".best-container");
   this.messageContainer = document.querySelector(".game-message");
-    this.scoreMultiplierContainer  = document.querySelector(".score-multiplier");
     this.info             = document.querySelector(".info");
     this.dogeSays = document.querySelector(".doge-says");
     this.adSpace = document.querySelector(".shout-out");
     
   this.score = 0;
-    this.scoreMultiplier = 0;
     
 }
-var scoreMultiplier = 0;
+
 var dogeSayings = ['☯', '☆', '✩', '✫', '✮', '✯', '✴', '✵', '❅', '✻', '✾', '✼', '❀', '❁', '❂', '❃','۞', '❇', '❈', '࿂', '❉', '❊', '❋',  '✧', '✇', '⏣', '◈',  '★', '৩', '࿗', '࿇', '࿋', '࿌', '࿅', '࿇', '☮', '☺', '☻', '࿔', '禅', 'ॐ', '♥', '♡', '⌯', '◈', '◁', '△', '✥', '✢', '✢', '✣', '✤', '✥', '✦', '✧', '★', '✩', '✪', '✫', '✬', '✭', '✮', '✯', '✱', '✲', '✳', '✴', '✵', '✶', '✷', '✸', '✹', '✺', '✻', '✼', '✽', '✾', '✿', '❀', '❁', '❂', '❃', '❄', '❅', '❆', '❇', '❈', '❉', '❊', '❋', '☥', '☸', '⛢']
 
 var ads = [
@@ -120,18 +119,26 @@ HTMLActuator.prototype.positionClass = function (position) {
 
 HTMLActuator.prototype.updateScore = function (score) {
   this.clearContainer(this.scoreContainer);
+    this.clearContainer(this.scoreMultiplierContainer);
     this.clearContainer(this.dogeSays)
   var difference = score - this.score;
   this.score = score;
-
+    this.scoreMultiplier = difference;
   this.scoreContainer.textContent = this.score;
-
+    this.scoreMultiplierContainer.textContent = this.scoreMultiplier;
+    
   if (difference > 0) {
     var addition = document.createElement("div");
     addition.classList.add("score-addition");
     addition.textContent = "+" + difference;
-    this.scoreContainer.appendChild(addition);
+      this.scoreContainer.appendChild(addition);
 
+  
+          var multiplier = document.createElement("div");
+          multiplier.classList.add("multiplier-factor");
+          addition.textContent = "+" + difference;
+          this.scoreMultiplierContainer.appendChild(multiplier);
+  
       /*DOGE*/
   
       var message = dogeSayings[Math.floor(Math.random() * dogeSayings.length)]

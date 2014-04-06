@@ -2,16 +2,11 @@
 html, body {
   margin: 10;
   padding: 0;
-  min-height: 100%;
   -webkit-text-size-adjust: auto;
   
- background: #330033  /*url('http://www.sejus.com/earth2willi/images/novaluna.gif')*/;
- /* background-size: cover;
-  background-repeat: fill;*/
- 
- height: 100%;
+ background: #330033  url('../images/tile-shading-lighten-white128.png');
+ background-size: cover;
  background-position: center;
-     background-size: 100%;
  /*    background-color: hsla(320,80%,60%,1);
      background-image: repeating-radial-gradient( hsla(320,100%,60%,.5) 0px, hsla(220,100%,60%,0), hsla(320,100%,60%,.5)  60%),
      repeating-radial-gradient( hsla(330,100%,50%,1) 12%, hsla(320,80%,70%,1),  hsla(330,100%,50%,1) 100px);*/
@@ -29,7 +24,7 @@ html, body {
 
 
 body {
-  margin: 80px 0; }
+  margin: 0px 0; }
 
 .heading:after {
   content: "";
@@ -150,10 +145,30 @@ transform: scale(10) rotate(-180deg);
         100%   { background-size:  100px  100px, 50px 50px;
 }*/
      
-     0%   {background: #bbffff;}
-     33%  {background: #ffbbff;}
-     66%  {background: #ffffbb;}
-    100%   {background: #bbffff;}}
+     0%   {background: #77ffff  url('../images/tile-shading-lighten-white128.png');
+         background-size: cover;
+         background-position: center;
+ /*       background-image: url('../images/tile-shading-lighten-white128block.png');
+     background-position: -256px 0px;*/
+        }
+     33%  {background: #ff77ff  url('../images/tile-shading-lighten-white128.png');
+         background-size: cover;
+         background-position: center;
+    /*     background-image: url('../images/tile-shading-lighten-white128block.png');
+         background-position: 0px 0px;*/
+}
+     66%  {background: #ffff77  url('../images/tile-shading-lighten-white128.png');
+         background-size: cover;
+         background-position: center;
+ /*        background-image: url('../images/tile-shading-lighten-white128block.png');
+          background-position: 0px 256px;*/
+}
+     100%   {background: #77ffff  url('../images/tile-shading-lighten-white128.png');
+         background-size: cover;
+         background-position: center;
+/*          background-image: url('../images/tile-shading-lighten-white128block.png');
+          background-position: 0px 256px;*/
+}}
 
     
         /*background: #bbffff url('http://www.sejus.com/earth2willi/images/novaluna.gif');
@@ -213,7 +228,10 @@ transform: scale(10) rotate(-180deg);
 .multiplier-layout-container {
     float: center;
     text-align: right;
-}
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: #000000;}
+
+
 
 /*Doge*/
 
@@ -333,9 +351,9 @@ transform: scale(10) rotate(-180deg);
   color: white;
   margin-top: 5px;
   text-align: center;
-  -webkit-animation: restart-gradient-change 3s infinite;
-  -moz-animation: restart-gradient-change 3s infinite;
-  animation: restart-gradient-change 3s infinite;
+  -webkit-animation: score-gradient-change 14s infinite;
+  -moz-animation: score-gradient-change 14s infinite;
+  animation: score-gradient-change 14s infinite;
   
   
   border: 2px;
@@ -344,6 +362,15 @@ transform: scale(10) rotate(-180deg);
   
   
  }
+.score-multiplier-container {
+
+border: 3px;
+border-style: solid;
+-webkit-animation: score-gradient-change linear 2s infinite alternate-reverse;
+-webkit-text-stroke: 1px;
+-webkit-text-stroke-color: #000000;
+
+}
 .score-container:after, .best-container:after, .score-multiplier-container:after {
     position: absolute;
     width: 100%;
@@ -353,8 +380,8 @@ transform: scale(10) rotate(-180deg);
     font-size: 13px;
     line-height: 13px;
     text-align: center;
-    color: #eee4da; }
-  .score-container .score-addition, .best-container .score-addition, .score-multiplier-container .score-multiplier-addition {
+    color: #AAAAAA; }
+.score-container .score-addition, .best-container .score-addition  {
     position: absolute;
     right: 30px;
     font-size: 25px;
@@ -369,6 +396,15 @@ transform: scale(10) rotate(-180deg);
     -moz-animation-fill-mode: both;
     animation-fill-mode: both; }
 
+.score-multiplier-container .multiplier-factor {
+    position: absolute;
+    right: 30px;
+    font-size: 25px;
+    line-height: 25px;
+    font-weight: bold;
+    z-index: 100;
+}
+
 .score-container:after {
   content: "Score"; }
 
@@ -376,7 +412,7 @@ transform: scale(10) rotate(-180deg);
   content: "Best"; }
 
 .score-multiplier-container:after {
-    content: "Mult";}
+    content: "Alpha";}
 
 .restart-button {
     position: relative;
@@ -385,7 +421,7 @@ transform: scale(10) rotate(-180deg);
     border-radius: 100px;
     padding: 15px 25px;
     text-decoration: none;
-    color: #222222;
+    color: #FFFFFF;
     height: auto;
     margin-top: 0px;
     text-align: center;
@@ -402,10 +438,18 @@ transform: scale(10) rotate(-180deg);
 }
 
 @-webkit-keyframes restart-gradient-change {
-    0%   {background: #aaeeee; border-color: #ddddbb;}
-    33%  {background: #eeaaee; border-color: #bbdddd;}
-    66%  {background: #eeeeaa; border-color: #ddbbdd;}
-    100%   {background: #aaeeee; border-color: #ddddbb;}}
+    0%   {background: #aaeeee; border-color: #ffffbb;
+        color: #FF33FF;
+}
+    33%  {background: #eeaaee; border-color: #bbffff;
+        color: #FFFF33;
+}
+    66%  {background: #eeeeaa; border-color: #ffbbff;
+        color: #33FFFF;
+}
+    100%   {background: #aaeeee; border-color: #ffffbb;
+        color: #FF33FF;
+}}
 
 @-moz-keyframes restart-gradient-change {
     0%   {background: #bbffff;}
@@ -418,6 +462,33 @@ transform: scale(10) rotate(-180deg);
     33%  {background: #ffbbff;}
     66%  {background: #ffffbb;}
     100%   {background: #bbffff;}}
+
+
+@-webkit-keyframes score-gradient-change {
+    0%   {background: #cceeff; border-color: #eeeecc;
+        color: #EE66EE;
+}
+    33%  {background: #ffccee; border-color: #cceeee;
+        color: #EEEE66;
+}
+    66%  {background: #eeffcc; border-color: #eeccee;
+        color: #66EEEE;
+}
+    100%   {background: #cceeff; border-color: #eeeecc;
+        color: #EE66EE;
+}}
+
+@-moz-keyframes score-gradient-change {
+    0%   {background: #cceeff; border-color: #eeeecc;}
+33%  {background: #ffccee; border-color: #cceeee;}
+66%  {background: #eeffcc; border-color: #eeccee;}
+100%   {background: #cceeff; border-color: #eeeecc;}}
+
+@keyframes score-gradient-change {
+    0%   {background: #cceeff; border-color: #eeeecc;}
+33%  {background: #ffccee; border-color: #cceeee;}
+66%  {background: #eeffcc; border-color: #eeccee;}
+100%   {background: #cceeff; border-color: #eeeecc;}}
 
 
 p {
