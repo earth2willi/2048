@@ -145,25 +145,25 @@ transform: scale(10) rotate(-180deg);
         100%   { background-size:  100px  100px, 50px 50px;
 }*/
      
-     0%   {background: #77ffff  url('../images/tile-shading-lighten-white128.png');
+     0%   {background: #77ffff;  url('../images/tile-shading-lighten-white128.png');
          background-size: cover;
          background-position: center;
  /*       background-image: url('../images/tile-shading-lighten-white128block.png');
      background-position: -256px 0px;*/
         }
-     33%  {background: #ff77ff  url('../images/tile-shading-lighten-white128.png');
+     33%  {background: #ff77ff;  url('../images/tile-shading-lighten-white128.png');
          background-size: cover;
          background-position: center;
     /*     background-image: url('../images/tile-shading-lighten-white128block.png');
          background-position: 0px 0px;*/
 }
-     66%  {background: #ffff77  url('../images/tile-shading-lighten-white128.png');
+     66%  {background: #ffff77;  url('../images/tile-shading-lighten-white128.png');
          background-size: cover;
          background-position: center;
  /*        background-image: url('../images/tile-shading-lighten-white128block.png');
           background-position: 0px 256px;*/
 }
-     100%   {background: #77ffff  url('../images/tile-shading-lighten-white128.png');
+     100%   {background: #77ffff;  url('../images/tile-shading-lighten-white128.png');
          background-size: cover;
          background-position: center;
 /*          background-image: url('../images/tile-shading-lighten-white128block.png');
